@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WBPiano - Piano Virtual</title>
+    <link rel="stylesheet" href="../css/piano_virtual.css">
+</head>
+<body>
+    
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <div class="header">
+        <div class="container">
+
+            <div class="logo">
+                <a href="./piano_virtual.html"><img src="../img/index/logo_fixo.png" alt="logo_site"></a>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <il><a href="../index.html"> Voltar à Página Inicial.</a></il>
+                </ul>   
+            </div>
+        </div>
+    </div>
+    <!--FIM BARRA DE NAVEGAÇÃO-->
+
+    <!--APP-->
+    <div class="container">
+        <center>
+            <div class="app">
+                <center>
+                    <p> PIANO VIRTUAL </p>
+                </center>
+
+                <audio id="do3-som">
+                    <source src="../sounds/do_40.wav" type="audio/wav">
+                </audio>
+                
+                <audio id="re3-som">
+                    <source src="../sounds/re_42.wav" type="audio/wav">
+                </audio>
+                <audio id="mi3-som">
+                    <source src="../sounds/mi_44.wav" type="audio/wav">
+                </audio>
+                <audio id="fa3-som">
+                    <source src="../sounds/fa_45.wav" type="audio/wav">
+                </audio>
+                
+                <div class="ap_seta">
+                    <img src="../img/piano_virtual/seta_esq.png" alt="">
+                </div>
+                
+                <div class="ap_piano_virtual">
+                    <!-- 3A ESCALA -->
+                    
+                    <span onclick="do3()">
+                        <img src="../img/piano_virtual/notas/do.png">
+                    </a>
+                    <img src="../img/piano_virtual/notas/re.png" onclick="re3()">
+                    <img src="../img/piano_virtual/notas/mi.png" onclick="mi3()">
+                    <img src="../img/piano_virtual/notas/fa.png" onclick="fa3()">
+                    <img src="../img/piano_virtual/notas/sol.png" onclick="sol3()">
+                    <img src="../img/piano_virtual/notas/la.png" onclick="la3()">
+                    <img src="../img/piano_virtual/notas/si.png" onclick="si3()">
+                    <!-- 4A  ESCALA-->
+                    <img src="../img/piano_virtual/notas/do.png" onclick="do4()">
+                    <img src="../img/piano_virtual/notas/re.png" onclick="re4()">
+                    <img src="../img/piano_virtual/notas/mi.png" onclick="mi4()">
+                    <img src="../img/piano_virtual/notas/fa.png" onclick="fa4()">
+                    <img src="../img/piano_virtual/notas/sol.png" onclick="sol4()">
+                    <img src="../img/piano_virtual/notas/la.png" onclick="la4()">
+                    <img src="../img/piano_virtual/notas/si.png" onclick="si4()">
+                    <!-- 5A ESCALA -->
+                    <img src="../img/piano_virtual/notas/do.png" onclick="do5()">
+                    <img src="../img/piano_virtual/notas/re.png" onclick="re5()">
+                    <img src="../img/piano_virtual/notas/mi.png" onclick="mi5()">
+                    <img src="../img/piano_virtual/notas/fa.png" onclick="fa5()">
+                    <img src="../img/piano_virtual/notas/sol.png" onclick="sol5()">
+                    <img src="../img/piano_virtual/notas/la.png" onclick="la5()">
+                    <img src="../img/piano_virtual/notas/si.png" onclick="si5()">
+            
+                <!-- NOME DA NOTA -->
+                <div class="ap_seta">
+                    <img src="../img/piano_virtual/seta_dir.png" alt="">
+                </div>
+                
+                <center>
+                    <br>Nota: <b id="nota_x"> ? </b>
+                    <br>Região: <b id="regiao_x"> ? </b>
+                    <br>Tom: <b id="tom_x"> ? </b>
+
+                    <br> BIBLIOGRAFIA
+                </center>
+            </div>
+        </center>
+    </div>
+    <!--FIM APP-->
+
+<!--RODAPÉ-->
+    <center>
+    <div class="container">
+        <div class="frase">
+            <p> "Um piano tem em média 230 cordas, não há melhor nem pior. É uma equipe, cada uma cumpre suas notas, substitui ou afina, não há corda ruim nem boa tudo depende de quem venha tocar." Elank Lewer
+            </p>
+        </div>
+    </div>
+    <div class="creditos">
+        Feito por Felipe França
+    </div>
+    </center>
+    <!--FIM RODAPÉ-->
+
+</body>
+</html>
+<script type="text/javascript" src="../js/piano_virtual.js"></script>

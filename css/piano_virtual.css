@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color:#1C1C1C;
+}
+.container{
+    width: 930px;
+    margin: 0 auto;
+}
+/*BARRA DE NAVEGAÇÃO*/
+.header{
+    background-color: white;
+    width: 100%;
+    height: 58px;
+    margin: 0px;
+    padding: 5px;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    height: 50px;
+    border-radius: 5px;
+}
+.nav{
+    float: right;
+}
+.nav ul li{
+    display: inline-block;
+    
+}
+.nav a{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+/*FIM BARRA DE NAVEGAÇÃO*/
+
+/* APP */
+.app{
+    display: inline-block;
+    background-color: #000000;
+    font-family: cursive;
+    color: white;
+    width: auto;
+    height: auto;  
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.app p{
+    margin: 5px;
+    font-size: 18px;
+}
+.app b{
+    font-size: 22px;
+}
+.ap_seta{
+    display: inline-block;
+    margin: 5px;
+    padding: 0;
+}
+.ap_seta img{
+    height: 50px;
+    cursor: pointer;
+}
+.ap_piano_virtual{
+    display: inline-block;
+    margin: 0px;
+    padding: 0;
+}
+.ap_piano_virtual img{
+    height: 100px;
+    cursor: pointer;
+}
+
+/* FIM APP */
+/* FRASE */
+.frase{
+    display: inline-block;
+    font-family: cursive;
+    font-size: 15px;
+    color: white;
+    background-color: #363636;
+    width: auto;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.frase p{
+    margin: 0;
+}
+/* FIM FRASE */
+/* CREDITOS */
+.frase{
+    display: inline-block;
+    font-family: cursive;
+    background-color: rgba(128, 128, 128, 0.671);
+    font-size: 15px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: white;
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 95%;
+}
+.frase p{
+    margin: 0;
+}
+.creditos{
+    font-family: cursive;
+    font-size: 15px;
+    background-color: #000000;
+    color: white;
+    padding: 5px;
+}
+/* FIM CREDITOS */

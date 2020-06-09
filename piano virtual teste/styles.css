@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+}
+
+.piano {
+  display: flex;
+}
+
+.tecla {
+border-radius: 5px;
+}
+
+.branca{
+  width: 37.5px;
+  height: 150px;
+  background-color: white;
+}
+.branca.ativa {
+  background-color: #CCC;
+}
+.preta{
+  background-color: black;
+  width: 22.5px;
+  height: 90px;
+  margin: 0px -11.25px;
+  z-index: 2;
+}
+.preta.ativa {
+  background-color: #333;
+} 

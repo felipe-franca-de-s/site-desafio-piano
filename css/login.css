@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color:#1C1C1C;
+}
+.container{
+    width: 930px;
+    margin: 0 auto;
+}
+/*BARRA DE NAVEGAÇÃO*/
+.header{
+    background-color: black;
+    width: 100%;
+    height: 58px;
+    margin: 0px;
+    padding: 5px;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    height: 50px;
+    border-radius: 5px;
+}
+.nav{
+    float: right;
+}
+.nav ul li{
+    display: inline-block;
+}
+.nav a{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+/*FIM BARRA DE NAVEGAÇÃO*/
+/* CADASTRO */
+.img_fundo{
+    background-image: url(../img/login/piano_fundo.png);
+    background-size: cover;
+    width: 100%;
+    height: 465px;
+    padding-top: 15px;
+}
+img{
+    height: 50px;
+}   
+.box_cadastro{
+    margin: 1% 25% 5% ;
+    padding: 20px 20px 40px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0px 0px 31px 0px rgb(102, 99, 247);
+    border-radius: 30px;
+    font-family: cursive;
+}
+.box_cadastro h1{
+    text-align: center;
+    margin: 5px;
+}
+.box_cadastro h3{
+    text-align: center;
+    margin: 5px;
+}
+.dados{
+    margin: 15px;
+    display: flex;
+}
+.descricao{
+    font-size: 19.5px;
+    margin-right: 20px;
+}
+.campo input{
+    height: 20px;
+    margin: 2px;
+    width: 300px;
+    font-size: 15px;
+}
+.box_cadastro button{
+    font-family: cursive;
+    padding: 0;
+    font-size: 15px;
+    float: right;
+    background-color: rgb(29, 201, 29);
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+}
+/* CADASTRO */
+/* CREDITOS */
+.frase{
+    display: inline-block;
+    font-family: cursive;
+    background-color: rgba(128, 128, 128, 0.671);
+    font-size: 15px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: white;
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 95%;
+}
+.frase p{
+    margin: 0;
+}
+.creditos{
+    font-family: cursive;
+    font-size: 15px;
+    background-color: #000000;
+    color: white;
+    padding: 5px;
+}
+/* FIM CREDITOS */

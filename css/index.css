@@ -1,0 +1,254 @@
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color:#1C1C1C;
+}
+.container{
+    width: 930px;
+    margin: 0 auto;
+}
+/*BARRA DE NAVEGAÇÃO*/
+.header{
+    background-color: black;
+    width: 100%;
+    height: 58px;
+    margin: 0px;
+    padding: 5px;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    height: 50px;
+    border-radius: 5px;
+}
+.nav{
+    float: right;
+    display: flex;
+}
+.nav ul li{
+    display: inline-block;
+    
+}
+.nav a{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.cadastrar{
+    background-color: white;
+    color: black;
+}
+.login{
+    background-color: black;
+    color: white;
+}
+/*FIM BARRA DE NAVEGAÇÃO*/
+/*APRESENTAÇÃO*/
+.img_fundo{
+    background-image: url(../img/index/piano_concerto_2.png);
+    background-size: cover;
+    width: 100%;
+    height: 1285px;
+    padding-top: 15px;
+}
+.apresentacao{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 40px;
+    color: white;
+    background-color: #363636b0;
+    width: 80%;
+    height: auto;
+    padding: 20px 25px 35px;
+    border-radius: 10px;
+}
+.apresentacao p{
+    margin: 0;
+    padding: 0;
+}
+/* FIM APRESENTAÇÃO */
+/* MENU */
+.menu{
+    display: inline-block;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    height: 100px;
+    width: 100%;
+    margin: 15px 0px 0px 0px;
+    font-family: cursive;
+    font-size: 25px;
+}
+.menu button{
+    cursor: pointer;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 25px;
+    height: 50px;
+    width: 180px;
+    margin: 5px 2px 8px;
+    color: white;
+    border-color: white;
+    border-radius: 5px 25px;
+}
+.menu .btn_hist {
+    background-color:  #191970;
+}
+.menu .btn_tipos {
+    background-color:  #483D8B;
+}
+.menu .btn_pianistas {
+    background-color:  #191970;
+}
+.menu .btn_curiosidades {
+    background-color:  #483D8B;
+}
+
+/* FIM MENU */
+/* BOX MENU */
+.box_menu{
+    background-color: #363636cb;
+    width: 100%;
+    height: 965px;
+    padding: 20px;
+    border-radius: 8px;
+}
+.titulo{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 35px;
+    color: white;
+}
+/* HISTORIA */
+.historia{
+    display: block;
+
+    width: 100%;
+    font-size: 22px;
+    color: white;
+    font-family: cursive;
+    margin-top: 10px;
+}
+.box_historia{
+    display: flex;
+    padding: 10px;
+    height: 250px;
+    margin-top: 20px;
+    width: 98%;
+    font-size: 15.5px;
+    color: white;
+    font-family: cursive;
+    background-color: rgba(112, 128, 144, 0.705);
+    border-radius: 10px;
+}
+.box_historia img{
+    height: 250px;
+    border-radius: 10px 25px;
+    margin-right: 25px;
+}
+/* TIPO DE PIANO */
+.tipo_piano{
+    display: none;
+
+    width: 100%;
+    font-size: 23px;
+    color: white;
+    font-family: cursive;
+    margin-top: 10px;
+
+}
+.box_tipo{
+    display: flex;
+    height: 200px;
+    margin-top: 10px;
+    width: 98%;
+    font-size: 15.5px;
+    color: white;
+    font-family: cursive;
+    background-color: rgba(112, 128, 144, 0.705);
+    border-radius: 10px;
+    padding: 10px;
+}
+.box_tipo img{
+    height: 200px;
+    margin-right: 25px;
+}
+/* PIANISTAS */
+.pianistas{
+    display: none;
+
+    width: 100%;
+    font-size: 23px;
+    color: white;
+    font-family: cursive;
+    margin-top: 10px;
+}
+.box_pianistas{
+    display: flex;
+    height: 175px;
+    margin-top: 10px;
+    width: 98%;
+    font-size: 15.5px;
+    color: white;
+    font-family: cursive;
+    background-color: rgba(112, 128, 144, 0.705);
+    border-radius: 10px;
+    padding: 10px;
+}
+.box_pianistas img{
+    height: 150px;
+    border-radius: 10px 25px;
+    margin-right: 25px;
+}
+/* CURIOSIDADES */
+.curiosidades{
+    display: none;
+    
+    width: 100%;
+    font-size: 21px;
+    color: white;
+    font-family: cursive;
+    margin-top: 10px;
+}
+.box_curiosidades{
+    display: flex;
+    margin-top: 10px;
+    height: 65px;
+    width: 98%;
+    font-size: 15.5px;
+    color: white;
+    font-family: cursive;
+    background-color: rgba(112, 128, 144, 0.705);
+    border-radius: 10px;
+    padding: 5px;
+}
+.box_curiosidades img{
+    height: 60px;
+    border-radius: 10px 25px;
+    margin-right: 25px;
+}
+/* FIM BOX MENU */
+/* CREDITOS */
+.frase{
+    display: inline-block;
+    font-family: cursive;
+    background-color: rgba(128, 128, 128, 0.671);
+    font-size: 15px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: white;
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 95%;
+}
+.frase p{
+    margin: 0;
+}
+.creditos{
+    font-family: cursive;
+    font-size: 15px;
+    background-color: #000000;
+    color: white;
+    padding: 5px;
+}
+/* FIM CREDITOS */

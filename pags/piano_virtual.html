@@ -33,58 +33,74 @@
                     <p> PIANO VIRTUAL </p>
                 </center>
 
-                <audio id="do3-som">
-                    <source src="../sounds/do_40.wav" type="audio/wav">
-                </audio>
+                <audio id="28_c" src="../piano virtual teste/notes/C.mp3"></audio>
+                <audio id="29_db" src="../piano virtual teste/notes/Db.mp3"></audio>
+                <audio id="30_d" src="../piano virtual teste/notes/D.mp3"></audio>
+                <audio id="31_eb" src="../piano virtual teste/notes/Eb.mp3"></audio>
+                <audio id="32_e" src="../piano virtual teste/notes/E.mp3"></audio>
+                <audio id="33_f" src="../piano virtual teste/notes/F.mp3"></audio>
+                <audio id="34_gb" src="../piano virtual teste/notes/Gb.mp3"></audio>
+                <audio id="35_g" src="../piano virtual teste/notes/G.mp3"></audio>
+                <audio id="36_ab" src="../piano virtual teste/notes/Ab.mp3"></audio>
+                <audio id="37_a" src="../piano virtual teste/notes/A.mp3"></audio>
+                <audio id="38_bb" src="../piano virtual teste/notes/Bb.mp3"></audio>
+                <audio id="39_b" src="../piano virtual teste/notes/B.mp3"></audio>
                 
-                <audio id="re3-som">
-                    <source src="../sounds/re_42.wav" type="audio/wav">
-                </audio>
-                <audio id="mi3-som">
-                    <source src="../sounds/mi_44.wav" type="audio/wav">
-                </audio>
-                <audio id="fa3-som">
-                    <source src="../sounds/fa_45.wav" type="audio/wav">
-                </audio>
-                
-                <div class="ap_seta">
-                    <img src="../img/piano_virtual/seta_esq.png" alt="">
-                </div>
-                
-                <div class="ap_piano_virtual">
-                    <!-- 3A ESCALA -->
-                    
-                    <span onclick="do3()">
-                        <img src="../img/piano_virtual/notas/do.png">
-                    </a>
-                    <img src="../img/piano_virtual/notas/re.png" onclick="re3()">
-                    <img src="../img/piano_virtual/notas/mi.png" onclick="mi3()">
-                    <img src="../img/piano_virtual/notas/fa.png" onclick="fa3()">
-                    <img src="../img/piano_virtual/notas/sol.png" onclick="sol3()">
-                    <img src="../img/piano_virtual/notas/la.png" onclick="la3()">
-                    <img src="../img/piano_virtual/notas/si.png" onclick="si3()">
-                    <!-- 4A  ESCALA-->
-                    <img src="../img/piano_virtual/notas/do.png" onclick="do4()">
-                    <img src="../img/piano_virtual/notas/re.png" onclick="re4()">
-                    <img src="../img/piano_virtual/notas/mi.png" onclick="mi4()">
-                    <img src="../img/piano_virtual/notas/fa.png" onclick="fa4()">
-                    <img src="../img/piano_virtual/notas/sol.png" onclick="sol4()">
-                    <img src="../img/piano_virtual/notas/la.png" onclick="la4()">
-                    <img src="../img/piano_virtual/notas/si.png" onclick="si4()">
-                    <!-- 5A ESCALA -->
-                    <img src="../img/piano_virtual/notas/do.png" onclick="do5()">
-                    <img src="../img/piano_virtual/notas/re.png" onclick="re5()">
-                    <img src="../img/piano_virtual/notas/mi.png" onclick="mi5()">
-                    <img src="../img/piano_virtual/notas/fa.png" onclick="fa5()">
-                    <img src="../img/piano_virtual/notas/sol.png" onclick="sol5()">
-                    <img src="../img/piano_virtual/notas/la.png" onclick="la5()">
-                    <img src="../img/piano_virtual/notas/si.png" onclick="si5()">
-            
+                <div class="piano">
+
+                    <div class="ap_seta">
+                        <img src="../img/piano_virtual/seta_esq.png" alt="">
+                    </div>
+                    <!-- ESCALA 3 -->
+                    <span class="escala3">
+                        <button data-note='28_c' class="tecla branca" ></button>
+                        <button data-note='29_db' class="tecla preta" ></button>
+                        <button data-note='30_d' class="tecla branca" ></button>
+                        <button data-note='31_eb' class="tecla preta" ></button>
+                        <button data-note='32_e' class="tecla branca" ></button>
+                        <button data-note='33_f' class="tecla branca" ></button>
+                        <button data-note='34_gb' class="tecla preta" ></button>
+                        <button data-note='35_g' class="tecla branca" ></button>
+                        <button data-note='36_ab' class="tecla preta" ></button>
+                        <button data-note='37_a' class="tecla branca" ></button>
+                        <button data-note='38_bb' class="tecla preta" ></button>
+                        <button data-note='39_b' class="tecla branca" ></button>
+                    </span>
+                    <!-- ESCALA 4 -->
+                    <span class="escala4">
+                        <button data-note='40_c' class="tecla branca" ></button>
+                        <button data-note='41_db' class="tecla preta" ></button>
+                        <button data-note='42_d' class="tecla branca" ></button>
+                        <button data-note='43_eb' class="tecla preta" ></button>
+                        <button data-note='44_e' class="tecla branca" ></button>
+                        <button data-note='45_f' class="tecla branca" ></button>
+                        <button data-note='46_gb' class="tecla preta" ></button>
+                        <button data-note='47_g' class="tecla branca" ></button>
+                        <button data-note='48_ab' class="tecla preta" ></button>
+                        <button data-note='49_a' class="tecla branca" ></button>
+                        <button data-note='50_bb' class="tecla preta" ></button>
+                        <button data-note='51_b' class="tecla branca" ></button>
+                    </span>
+                    <!-- ESCALA 5 -->
+                    <button class="tecla branca" onclick="c5_som()"></button>
+                    <button class="tecla preta" onclick="db5_som()"></button>
+                    <button class="tecla branca" onclick="d5_som()"></button>
+                    <button class="tecla preta" onclick="eb5_som()"></button>
+                    <button class="tecla branca" onclick="e5_som()"></button>
+                    <button class="tecla branca" onclick="f5_som()"></button>
+                    <button class="tecla preta" onclick="gb5_som()"></button>
+                    <button class="tecla branca" onclick="g5_som()"></button>
+                    <button class="tecla preta" onclick="ab5_som()"></button>
+                    <button class="tecla branca" onclick="a5_som()"></button>
+                    <button class="tecla preta" onclick="bb5_som()"></button>
+                    <button class="tecla branca" onclick="b5_som()"></button>
+
+                    <div class="ap_seta">
+                        <img src="../img/piano_virtual/seta_dir.png" alt="">
+                    </div>
+
+                </div>     
                 <!-- NOME DA NOTA -->
-                <div class="ap_seta">
-                    <img src="../img/piano_virtual/seta_dir.png" alt="">
-                </div>
-                
                 <center>
                     <br>Nota: <b id="nota_x"> ? </b>
                     <br>Região: <b id="regiao_x"> ? </b>

@@ -142,40 +142,56 @@
 
                 <div class="adivinhe_som" id="adivinhe_som">
                     
-                   <p><button onclick="jogar()" class="play" id="play">Jogar ⏯</button></p>
-                   <p id="txt_jogo">
-                       Teste seu ouvido musical. Ouça o som da tecla de piano <br>
-                       e selecione a nota que você considere certa. <br>
-                       No final você tera uma avaliação.
-                   </p>
+                   <span class="ver_comecar" id="ver_comecar">
+                        <p id="txt_jogo">
+                            Teste seu ouvido musical. Ouça o som da tecla de piano <br>
+                            e selecione a nota que você considere certa. <br>
+                            No final você tera uma avaliação.
+                        </p>
+                        <p><button onclick="jogar()" class="play" id="play">Jogar ⏯</button></p>
+                   </span>
+                   
+                    <span class="ver_jogo" id="ver_jogo">
+                        <div class="jogo">
+                            <img src="../img/jogos/adivinhe_som/notas.jpg" class="notas-img">
+                            <button id="repetir_som" class="btn_rep_som">Repetir Som🔊</button> <br>
 
-                   <div class="jogo">
-                        <img src="../img/jogos/adivinhe_som/notas.jpg" class="notas-img">
-                        <button id="repetir_som" class="btn_rep_som">Repetir Som🔊</button> <br>
-                        <button id="do_nota" class="btn_do">Dó</button>
-                        <button id="re_nota" class="btn_re">Ré</button>
-                        <button id="mi_nota" class="btn_mi">Mi</button>
-                        <button id="fa_nota" class="btn_fa">Fá</button>
-                        <button id="sol_nota" class="btn_sol">Sol</button>
-                        <button id="la_nota" class="btn_la">Lá</button>
-                        <button id="si_nota" class="btn_si">Si</button>
-                    </div>
+                            <select id="nota_escolhida">
+                                <option value="0">Escolha uma Nota</option>
+                                <option value="1">Dó</option>
+                                <option value="2">Ré</option>
+                                <option value="3">Mi</option>
+                                <option value="4">Fá</option>
+                                <option value="5">Sol</option>
+                                <option value="6">Lá</option>
+                                <option value="7">Si</option>
+                            </select>
+                            <button ondblclick="continuar()" id="proximo_som" class="btn_proximo">Próximo Som</button>
+                        </div>
 
-                    <div class="cor_luz">
-                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                    </div>
-
-                    <p><button onclick="jogar_de_novo()" class="repetir" id="repetir">Jogar de Novo 🔁</button></p>
+                        <div class="cor_luz">
+                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                        </div>
+                    </span>
+                    
+                    <span class="ver_resultado" id="ver_resultado">
+                        <p id="msg_resultado">
+                            Parabéns, você tem um bom ouvido para piano. <br> Seu ouvido é chamado, musicalmente, de ouvido relativo.
+                        </p>
+                        
+                        <p><button onclick="jogar_de_novo()" class="repetir" id="repetir">Jogar de Novo 🔁</button></p>
+                    </span>
+                    
                 </div>
             </div>
         </center>

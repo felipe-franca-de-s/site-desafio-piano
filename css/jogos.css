@@ -154,6 +154,15 @@ body{
 .adivinhe_som p{
     margin-top: 0px;
 }
+.ver_começar{
+    display: block;
+}
+.ver_jogo{
+    display: none;
+}
+.ver_resultado{
+    display: none;
+}
 .play{
     font-size: 22px;
     font-family: cursive;
@@ -166,7 +175,8 @@ body{
 }
 .jogo{
     width: 400px;
-    height: 155px;
+    height: 100px;
+    padding: 20px 20px 0px 20px;
 }
 .jogo button{
     cursor: pointer;
@@ -181,36 +191,19 @@ body{
     background-color:  #191970;
     width: 150px;
 }
-.jogo .btn_do {
-    background-color:  #191970;
-    width: 40px;
+.jogo select{
+    height: 30px;
+    font-family: cursive;
+    font-size: 15px;
 }
-.jogo .btn_re {
+
+.jogo .btn_proximo {
     background-color:  #483D8B;
-    width: 40px;
+    width: 150px;
 }
-.jogo .btn_mi {
-    background-color:  #191970;
-    width: 40px;
-}
-.jogo .btn_fa {
-    background-color:  #483D8B;
-    width: 40px;
-}
-.jogo .btn_sol {
-    background-color:  #191970;
-    width: 40px;
-}
-.jogo .btn_la {
-    background-color:  #483D8B;
-    width: 40px;
-}
-.jogo .btn_si {
-    background-color:  #191970;
-    width: 40px;
-}
+
 .notas-img{
-    height: 100px;
+    height: 50px;
     border-radius: 5px;
 }
 .cor_luz{

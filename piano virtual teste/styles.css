@@ -15,7 +15,7 @@ border-radius: 5px;
   height: 150px;
   background-color: white;
 }
-.branca.ativa {
+.branca.active {
   background-color: #CCC;
 }
 .preta{
@@ -25,6 +25,6 @@ border-radius: 5px;
   margin: 0px -11.25px;
   z-index: 2;
 }
-.preta.ativa {
+.preta.active {
   background-color: #333;
 } 

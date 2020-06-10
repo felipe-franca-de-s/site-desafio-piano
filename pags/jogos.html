@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WBPiano - Piano Virtual</title>
+    <link rel="stylesheet" href="../css/jogos.css">
+</head>
+<body>
+    
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <div class="header">
+        <div class="container">
+
+            <div class="logo">
+                <a href="./piano_virtual.html"><img src="../img/index/logo_fixo.png" alt="logo_site"></a>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <il><a href="../index.html"> Voltar à Página Inicial.</a></il>
+                </ul>   
+            </div>
+        </div>
+    </div>
+    <!--FIM BARRA DE NAVEGAÇÃO-->
+
+    <!--APRESENTAÇÃO-->
+    <div class="img_fundo">
+        <div class="container">
+            <center>
+                <div class="apresentacao">
+                    <p>Divirta-se um pouco com esse instrumento.</p>
+                </div>
+                <div class="menu">
+                    Selecione um entreterimento.<br>
+                    <button class="btn_piano" onclick="piano_vitual()">Piano Virtual</button> 
+                    <button class="btn_som" onclick="adivinhe_som()">Adivinhe o Som</button>
+                </div>
+            </center>
+        </div>
+    <!--FIM APRESENTAÇÃO-->
+
+    <!--APP-->
+        <center>
+            <div class="app">
+                
+                <p> PIANO VIRTUAL </p>
+
+                <!-- ESCALA 3 AUDIO -->
+                <audio id="c3" src="../sounds/escala_3/28_c.wav"></audio>
+                <audio id="db3" src="../sounds/escala_3/29_db.wav"></audio>
+                <audio id="d3" src="../sounds/escala_3/30_d.wav"></audio>
+                <audio id="eb3" src="../sounds/escala_3/31_eb.wav"></audio>
+                <audio id="e3" src="../sounds/escala_3/32_e.wav"></audio>
+                <audio id="f3" src="../sounds/escala_3/33_f.wav"></audio>
+                <audio id="gb3" src="../sounds/escala_3/34_gb.wav"></audio>
+                <audio id="g3" src="../sounds/escala_3/35_g.wav"></audio>
+                <audio id="ab3" src="../sounds/escala_3/36_ab.wav"></audio>
+                <audio id="a3" src="../sounds/escala_3/37_a.wav"></audio>
+                <audio id="bb3" src="../sounds/escala_3/38_bb.wav"></audio>
+                <audio id="b3" src="../sounds/escala_3/39_b.wav"></audio>
+
+                <!-- ESCALA 4 AUDIO -->
+                <audio id="c4" src="../sounds/escala_4/40_c.wav"></audio>
+                <audio id="db4" src="../sounds/escala_4/41_db.wav"></audio>
+                <audio id="d4" src="../sounds/escala_4/42_d.wav"></audio>
+                <audio id="eb4" src="../sounds/escala_4/43_eb.wav"></audio>
+                <audio id="e4" src="../sounds/escala_4/44_e.wav"></audio>
+                <audio id="f4" src="../sounds/escala_4/45_f.wav"></audio>
+                <audio id="gb4" src="../sounds/escala_4/46_gb.wav"></audio>
+                <audio id="g4" src="../sounds/escala_4/47_g.wav"></audio>
+                <audio id="ab4" src="../sounds/escala_4/48_ab.wav"></audio>
+                <audio id="a4" src="../sounds/escala_4/49_a.wav"></audio>
+                <audio id="bb4" src="../sounds/escala_4/50_bb.wav"></audio>
+                <audio id="b4" src="../sounds/escala_4/51_b.wav"></audio>
+
+                <!-- ESCALA 5 AUDIO -->
+                <audio id="c5" src="../sounds/escala_5/52_c.wav"></audio>
+                <audio id="db5" src="../sounds/escala_5/53_db.wav"></audio>
+                <audio id="d5" src="../sounds/escala_5/54_d.wav"></audio>
+                <audio id="eb5" src="../sounds/escala_5/55_eb.wav"></audio>
+                <audio id="e5" src="../sounds/escala_5/56_e.wav"></audio>
+                <audio id="f5" src="../sounds/escala_5/57_f.wav"></audio>
+                <audio id="gb5" src="../sounds/escala_5/58_gb.wav"></audio>
+                <audio id="g5" src="../sounds/escala_5/59_g.wav"></audio>
+                <audio id="ab5" src="../sounds/escala_5/60_ab.wav"></audio>
+                <audio id="a5" src="../sounds/escala_5/61_a.wav"></audio>
+                <audio id="bb5" src="../sounds/escala_5/62_bb.wav"></audio>
+                <audio id="b5" src="../sounds/escala_5/63_b.wav"></audio>
+                
+                <div class="piano">
+
+                    <!-- ESCALA 3 TECLAS -->
+                    <button class="tecla branca" onclick="c3_som()"></button>
+                    <button class="tecla preta" onclick="db3_som()"></button>
+                    <button class="tecla branca" onclick="d3_som()"></button>
+                    <button class="tecla preta" onclick="eb3_som()"></button>
+                    <button class="tecla branca" onclick="e3_som()"></button>
+                    <button class="tecla branca" onclick="f3_som()"></button>
+                    <button class="tecla preta" onclick="gb3_som()"></button>
+                    <button class="tecla branca" onclick="g3_som()"></button>
+                    <button class="tecla preta" onclick="ab3_som()"></button>
+                    <button class="tecla branca" onclick="a3_som()"></button>
+                    <button class="tecla preta" onclick="bb3_som()"></button>
+                    <button class="tecla branca" onclick="b3_som()"></button>
+                
+                    <!-- ESCALA 4 TECLAS -->
+                    <button class="tecla branca" onclick="c4_som()"></button>
+                    <button class="tecla preta" onclick="db4_som()"></button>
+                    <button class="tecla branca" onclick="d4_som()"></button>
+                    <button class="tecla preta" onclick="eb4_som()"></button>
+                    <button class="tecla branca" onclick="e4_som()"></button>
+                    <button class="tecla branca" onclick="f4_som()"></button>
+                    <button class="tecla preta" onclick="gb4_som()"></button>
+                    <button class="tecla branca" onclick="g4_som()"></button>
+                    <button class="tecla preta" onclick="ab4_som()"></button>
+                    <button class="tecla branca" onclick="a4_som()"></button>
+                    <button class="tecla preta" onclick="bb4_som()"></button>
+                    <button class="tecla branca" onclick="b4_som()"></button>
+                    
+                    <!-- ESCALA 5 TECLAS -->
+                    <button class="tecla branca" onclick="c5_som()"></button>
+                    <button class="tecla preta" onclick="db5_som()"></button>
+                    <button class="tecla branca" onclick="d5_som()"></button>
+                    <button class="tecla preta" onclick="eb5_som()"></button>
+                    <button class="tecla branca" onclick="e5_som()"></button>
+                    <button class="tecla branca" onclick="f5_som()"></button>
+                    <button class="tecla preta" onclick="gb5_som()"></button>
+                    <button class="tecla branca" onclick="g5_som()"></button>
+                    <button class="tecla preta" onclick="ab5_som()"></button>
+                    <button class="tecla branca" onclick="a5_som()"></button>
+                    <button class="tecla preta" onclick="bb5_som()"></button>
+                    <button class="tecla branca" onclick="b5_som()"></button>
+                </div>     
+                <!-- NOME DA NOTA -->
+                <p>
+                    Nota: <b id="nota_x"> ? </b>
+                    Tom: <b id="tom_x"> ? </b>
+                </p>
+            </div>
+        </center>
+    </div>
+    <!--FIM APP-->
+
+<!--RODAPÉ-->
+    <center>
+    <div class="container">
+        <div class="frase">
+            <p> "Um piano tem em média 230 cordas, não há melhor nem pior. É uma equipe, cada uma cumpre suas notas, substitui ou afina, não há corda ruim nem boa tudo depende de quem venha tocar." Elank Lewer
+            </p>
+        </div>
+    </div>
+    <div class="creditos">
+        Feito por Felipe França
+    </div>
+    </center>
+    <!--FIM RODAPÉ-->
+
+</body>
+</html>
+<script type="text/javascript" src="../js/jogos.js"></script>

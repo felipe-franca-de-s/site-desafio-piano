@@ -42,7 +42,7 @@ body{
 /*FIM BARRA DE NAVEGAÇÃO*/
 /*APRESENTAÇÃO*/
 .img_fundo{
-    background-image: url(../img/index/piano_concerto_2.png);
+    background-image: url(../img/jogos/piano_colorido.png);
     background-size: cover;
     width: 100%;
     height: 560px;
@@ -68,7 +68,7 @@ body{
     display: inline-block;
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
-    height: 100px;
+    height: 70px;
     width: 100%;
     margin: 10px 0px 0px 0px;
     font-family: cursive;
@@ -78,7 +78,7 @@ body{
     cursor: pointer;
     font-family: cursive;
     font-size: 20px;
-    height: 50px;
+    height: 42px;
     width: 230px;
     margin: 10px 20px;
     color: white;
@@ -95,7 +95,7 @@ body{
 /* FIM MENU */
 /* APP */
 .img_fundo{
-    background-image: url(../img/piano_virtual/piano_concerto2.png);
+    background-image: url(../img/jogos/piano_colorido.png);
     background-size: cover;
     width: 100%;
     height: 441px;
@@ -107,7 +107,7 @@ body{
     background-color: #000000b0;
     font-family: cursive;
     color: white;
-    width: auto;
+    min-width: 500px;
     height: auto;  
     margin: 15px;
     padding: 10px 20px;
@@ -116,11 +116,17 @@ body{
 .app p{
     margin: 5px;
 }
-.piano {
+/* FIM APP */
+/* PIANO VIRTUAL */
+.piano_vitual{
+    display: block;
+}
+.todas_teclas {
     display: flex;
 }
 .tecla {
     border-radius: 5px;
+    cursor: pointer;
 }
 .branca{
     width: 37.5px;
@@ -140,8 +146,90 @@ body{
 .preta.ativa {
     background-color: #333;
 }
-
-/* FIM APP */
+/* FIM PIANO VIRTUAL */
+/* ADIVINHE SOM */
+.adivinhe_som{
+    display: none;
+}
+.adivinhe_som p{
+    margin-top: 0px;
+}
+.play{
+    font-size: 22px;
+    font-family: cursive;
+    border-radius: 20px;
+    color: #f8f8f8;
+    background-color: #00a2ff;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+}
+.jogo{
+    width: 400px;
+    height: 155px;
+}
+.jogo button{
+    cursor: pointer;
+    font-family: cursive;
+    font-size: 15px;
+    height: 30px;
+    margin: 5px;
+    color: white;
+    border-radius: 25px;
+}
+.jogo .btn_rep_som{
+    background-color:  #191970;
+    width: 150px;
+}
+.jogo .btn_do {
+    background-color:  #191970;
+    width: 40px;
+}
+.jogo .btn_re {
+    background-color:  #483D8B;
+    width: 40px;
+}
+.jogo .btn_mi {
+    background-color:  #191970;
+    width: 40px;
+}
+.jogo .btn_fa {
+    background-color:  #483D8B;
+    width: 40px;
+}
+.jogo .btn_sol {
+    background-color:  #191970;
+    width: 40px;
+}
+.jogo .btn_la {
+    background-color:  #483D8B;
+    width: 40px;
+}
+.jogo .btn_si {
+    background-color:  #191970;
+    width: 40px;
+}
+.notas-img{
+    height: 100px;
+    border-radius: 5px;
+}
+.cor_luz{
+    margin: 10px 0px;
+}
+.cor_luz img{
+    height: 30px;
+}
+.repetir{
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 20px;
+    color: #f8f8f8;
+    background-color: #00a2ff;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+}
+/* FIM ADIVINHE SOM */
 /* FRASE */
 .frase{
     display: inline-block;

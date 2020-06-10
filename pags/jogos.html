@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WBPiano - Piano Virtual</title>
+    <title>WBPiano - Jogos</title>
     <link rel="stylesheet" href="../css/jogos.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
         <div class="container">
 
             <div class="logo">
-                <a href="./piano_virtual.html"><img src="../img/index/logo_fixo.png" alt="logo_site"></a>
+                <a href="../pags/jogos.html"><img src="../img/index/logo_fixo.png" alt="logo_site"></a>
             </div>
 
             <div class="nav">
@@ -34,8 +34,8 @@
                 </div>
                 <div class="menu">
                     Selecione um entreterimento.<br>
-                    <button class="btn_piano" onclick="piano_vitual()">Piano Virtual</button> 
-                    <button class="btn_som" onclick="adivinhe_som()">Adivinhe o Som</button>
+                    <button class="btn_piano" onclick="ver_piano_virtual()">Piano Virtual</button> 
+                    <button class="btn_som" onclick="ver_adivinhe_som()">Adivinhe o Som</button>
                 </div>
             </center>
         </div>
@@ -44,100 +44,139 @@
     <!--APP-->
         <center>
             <div class="app">
+                <div class="piano_virtual" id="piano_vitual">
                 
-                <p> PIANO VIRTUAL </p>
+                    <p> PIANO VIRTUAL </p>
 
-                <!-- ESCALA 3 AUDIO -->
-                <audio id="c3" src="../sounds/escala_3/28_c.wav"></audio>
-                <audio id="db3" src="../sounds/escala_3/29_db.wav"></audio>
-                <audio id="d3" src="../sounds/escala_3/30_d.wav"></audio>
-                <audio id="eb3" src="../sounds/escala_3/31_eb.wav"></audio>
-                <audio id="e3" src="../sounds/escala_3/32_e.wav"></audio>
-                <audio id="f3" src="../sounds/escala_3/33_f.wav"></audio>
-                <audio id="gb3" src="../sounds/escala_3/34_gb.wav"></audio>
-                <audio id="g3" src="../sounds/escala_3/35_g.wav"></audio>
-                <audio id="ab3" src="../sounds/escala_3/36_ab.wav"></audio>
-                <audio id="a3" src="../sounds/escala_3/37_a.wav"></audio>
-                <audio id="bb3" src="../sounds/escala_3/38_bb.wav"></audio>
-                <audio id="b3" src="../sounds/escala_3/39_b.wav"></audio>
+                    <!-- ESCALA 3 AUDIO -->
+                    <audio id="c3" src="../sounds/escala_3/28_c.wav"></audio>
+                    <audio id="db3" src="../sounds/escala_3/29_db.wav"></audio>
+                    <audio id="d3" src="../sounds/escala_3/30_d.wav"></audio>
+                    <audio id="eb3" src="../sounds/escala_3/31_eb.wav"></audio>
+                    <audio id="e3" src="../sounds/escala_3/32_e.wav"></audio>
+                    <audio id="f3" src="../sounds/escala_3/33_f.wav"></audio>
+                    <audio id="gb3" src="../sounds/escala_3/34_gb.wav"></audio>
+                    <audio id="g3" src="../sounds/escala_3/35_g.wav"></audio>
+                    <audio id="ab3" src="../sounds/escala_3/36_ab.wav"></audio>
+                    <audio id="a3" src="../sounds/escala_3/37_a.wav"></audio>
+                    <audio id="bb3" src="../sounds/escala_3/38_bb.wav"></audio>
+                    <audio id="b3" src="../sounds/escala_3/39_b.wav"></audio>
 
-                <!-- ESCALA 4 AUDIO -->
-                <audio id="c4" src="../sounds/escala_4/40_c.wav"></audio>
-                <audio id="db4" src="../sounds/escala_4/41_db.wav"></audio>
-                <audio id="d4" src="../sounds/escala_4/42_d.wav"></audio>
-                <audio id="eb4" src="../sounds/escala_4/43_eb.wav"></audio>
-                <audio id="e4" src="../sounds/escala_4/44_e.wav"></audio>
-                <audio id="f4" src="../sounds/escala_4/45_f.wav"></audio>
-                <audio id="gb4" src="../sounds/escala_4/46_gb.wav"></audio>
-                <audio id="g4" src="../sounds/escala_4/47_g.wav"></audio>
-                <audio id="ab4" src="../sounds/escala_4/48_ab.wav"></audio>
-                <audio id="a4" src="../sounds/escala_4/49_a.wav"></audio>
-                <audio id="bb4" src="../sounds/escala_4/50_bb.wav"></audio>
-                <audio id="b4" src="../sounds/escala_4/51_b.wav"></audio>
+                    <!-- ESCALA 4 AUDIO -->
+                    <audio id="c4" src="../sounds/escala_4/40_c.wav"></audio>
+                    <audio id="db4" src="../sounds/escala_4/41_db.wav"></audio>
+                    <audio id="d4" src="../sounds/escala_4/42_d.wav"></audio>
+                    <audio id="eb4" src="../sounds/escala_4/43_eb.wav"></audio>
+                    <audio id="e4" src="../sounds/escala_4/44_e.wav"></audio>
+                    <audio id="f4" src="../sounds/escala_4/45_f.wav"></audio>
+                    <audio id="gb4" src="../sounds/escala_4/46_gb.wav"></audio>
+                    <audio id="g4" src="../sounds/escala_4/47_g.wav"></audio>
+                    <audio id="ab4" src="../sounds/escala_4/48_ab.wav"></audio>
+                    <audio id="a4" src="../sounds/escala_4/49_a.wav"></audio>
+                    <audio id="bb4" src="../sounds/escala_4/50_bb.wav"></audio>
+                    <audio id="b4" src="../sounds/escala_4/51_b.wav"></audio>
 
-                <!-- ESCALA 5 AUDIO -->
-                <audio id="c5" src="../sounds/escala_5/52_c.wav"></audio>
-                <audio id="db5" src="../sounds/escala_5/53_db.wav"></audio>
-                <audio id="d5" src="../sounds/escala_5/54_d.wav"></audio>
-                <audio id="eb5" src="../sounds/escala_5/55_eb.wav"></audio>
-                <audio id="e5" src="../sounds/escala_5/56_e.wav"></audio>
-                <audio id="f5" src="../sounds/escala_5/57_f.wav"></audio>
-                <audio id="gb5" src="../sounds/escala_5/58_gb.wav"></audio>
-                <audio id="g5" src="../sounds/escala_5/59_g.wav"></audio>
-                <audio id="ab5" src="../sounds/escala_5/60_ab.wav"></audio>
-                <audio id="a5" src="../sounds/escala_5/61_a.wav"></audio>
-                <audio id="bb5" src="../sounds/escala_5/62_bb.wav"></audio>
-                <audio id="b5" src="../sounds/escala_5/63_b.wav"></audio>
-                
-                <div class="piano">
-
-                    <!-- ESCALA 3 TECLAS -->
-                    <button class="tecla branca" onclick="c3_som()"></button>
-                    <button class="tecla preta" onclick="db3_som()"></button>
-                    <button class="tecla branca" onclick="d3_som()"></button>
-                    <button class="tecla preta" onclick="eb3_som()"></button>
-                    <button class="tecla branca" onclick="e3_som()"></button>
-                    <button class="tecla branca" onclick="f3_som()"></button>
-                    <button class="tecla preta" onclick="gb3_som()"></button>
-                    <button class="tecla branca" onclick="g3_som()"></button>
-                    <button class="tecla preta" onclick="ab3_som()"></button>
-                    <button class="tecla branca" onclick="a3_som()"></button>
-                    <button class="tecla preta" onclick="bb3_som()"></button>
-                    <button class="tecla branca" onclick="b3_som()"></button>
-                
-                    <!-- ESCALA 4 TECLAS -->
-                    <button class="tecla branca" onclick="c4_som()"></button>
-                    <button class="tecla preta" onclick="db4_som()"></button>
-                    <button class="tecla branca" onclick="d4_som()"></button>
-                    <button class="tecla preta" onclick="eb4_som()"></button>
-                    <button class="tecla branca" onclick="e4_som()"></button>
-                    <button class="tecla branca" onclick="f4_som()"></button>
-                    <button class="tecla preta" onclick="gb4_som()"></button>
-                    <button class="tecla branca" onclick="g4_som()"></button>
-                    <button class="tecla preta" onclick="ab4_som()"></button>
-                    <button class="tecla branca" onclick="a4_som()"></button>
-                    <button class="tecla preta" onclick="bb4_som()"></button>
-                    <button class="tecla branca" onclick="b4_som()"></button>
+                    <!-- ESCALA 5 AUDIO -->
+                    <audio id="c5" src="../sounds/escala_5/52_c.wav"></audio>
+                    <audio id="db5" src="../sounds/escala_5/53_db.wav"></audio>
+                    <audio id="d5" src="../sounds/escala_5/54_d.wav"></audio>
+                    <audio id="eb5" src="../sounds/escala_5/55_eb.wav"></audio>
+                    <audio id="e5" src="../sounds/escala_5/56_e.wav"></audio>
+                    <audio id="f5" src="../sounds/escala_5/57_f.wav"></audio>
+                    <audio id="gb5" src="../sounds/escala_5/58_gb.wav"></audio>
+                    <audio id="g5" src="../sounds/escala_5/59_g.wav"></audio>
+                    <audio id="ab5" src="../sounds/escala_5/60_ab.wav"></audio>
+                    <audio id="a5" src="../sounds/escala_5/61_a.wav"></audio>
+                    <audio id="bb5" src="../sounds/escala_5/62_bb.wav"></audio>
+                    <audio id="b5" src="../sounds/escala_5/63_b.wav"></audio>
                     
-                    <!-- ESCALA 5 TECLAS -->
-                    <button class="tecla branca" onclick="c5_som()"></button>
-                    <button class="tecla preta" onclick="db5_som()"></button>
-                    <button class="tecla branca" onclick="d5_som()"></button>
-                    <button class="tecla preta" onclick="eb5_som()"></button>
-                    <button class="tecla branca" onclick="e5_som()"></button>
-                    <button class="tecla branca" onclick="f5_som()"></button>
-                    <button class="tecla preta" onclick="gb5_som()"></button>
-                    <button class="tecla branca" onclick="g5_som()"></button>
-                    <button class="tecla preta" onclick="ab5_som()"></button>
-                    <button class="tecla branca" onclick="a5_som()"></button>
-                    <button class="tecla preta" onclick="bb5_som()"></button>
-                    <button class="tecla branca" onclick="b5_som()"></button>
-                </div>     
-                <!-- NOME DA NOTA -->
-                <p>
-                    Nota: <b id="nota_x"> ? </b>
-                    Tom: <b id="tom_x"> ? </b>
-                </p>
+                    <div class="todas_teclas">
+
+                        <!-- ESCALA 3 TECLAS -->
+                        <button class="tecla branca" onclick="c3_som()"></button>
+                        <button class="tecla preta" onclick="db3_som()"></button>
+                        <button class="tecla branca" onclick="d3_som()"></button>
+                        <button class="tecla preta" onclick="eb3_som()"></button>
+                        <button class="tecla branca" onclick="e3_som()"></button>
+                        <button class="tecla branca" onclick="f3_som()"></button>
+                        <button class="tecla preta" onclick="gb3_som()"></button>
+                        <button class="tecla branca" onclick="g3_som()"></button>
+                        <button class="tecla preta" onclick="ab3_som()"></button>
+                        <button class="tecla branca" onclick="a3_som()"></button>
+                        <button class="tecla preta" onclick="bb3_som()"></button>
+                        <button class="tecla branca" onclick="b3_som()"></button>
+                    
+                        <!-- ESCALA 4 TECLAS -->
+                        <button class="tecla branca" onclick="c4_som()"></button>
+                        <button class="tecla preta" onclick="db4_som()"></button>
+                        <button class="tecla branca" onclick="d4_som()"></button>
+                        <button class="tecla preta" onclick="eb4_som()"></button>
+                        <button class="tecla branca" onclick="e4_som()"></button>
+                        <button class="tecla branca" onclick="f4_som()"></button>
+                        <button class="tecla preta" onclick="gb4_som()"></button>
+                        <button class="tecla branca" onclick="g4_som()"></button>
+                        <button class="tecla preta" onclick="ab4_som()"></button>
+                        <button class="tecla branca" onclick="a4_som()"></button>
+                        <button class="tecla preta" onclick="bb4_som()"></button>
+                        <button class="tecla branca" onclick="b4_som()"></button>
+                        
+                        <!-- ESCALA 5 TECLAS -->
+                        <button class="tecla branca" onclick="c5_som()"></button>
+                        <button class="tecla preta" onclick="db5_som()"></button>
+                        <button class="tecla branca" onclick="d5_som()"></button>
+                        <button class="tecla preta" onclick="eb5_som()"></button>
+                        <button class="tecla branca" onclick="e5_som()"></button>
+                        <button class="tecla branca" onclick="f5_som()"></button>
+                        <button class="tecla preta" onclick="gb5_som()"></button>
+                        <button class="tecla branca" onclick="g5_som()"></button>
+                        <button class="tecla preta" onclick="ab5_som()"></button>
+                        <button class="tecla branca" onclick="a5_som()"></button>
+                        <button class="tecla preta" onclick="bb5_som()"></button>
+                        <button class="tecla branca" onclick="b5_som()"></button>
+                    </div>     
+                    <!-- NOME DA NOTA -->
+                    <p>
+                        Nota: <b id="nota_x"> ? </b>
+                    </p>
+                </div>
+
+                <div class="adivinhe_som" id="adivinhe_som">
+                    
+                   <p><button onclick="jogar()" class="play" id="play">Jogar ⏯</button></p>
+                   <p id="txt_jogo">
+                       Teste seu ouvido musical. Ouça o som da tecla de piano <br>
+                       e selecione a nota que você considere certa. <br>
+                       No final você tera uma avaliação.
+                   </p>
+
+                   <div class="jogo">
+                        <img src="../img/jogos/adivinhe_som/notas.jpg" class="notas-img">
+                        <button id="repetir_som" class="btn_rep_som">Repetir Som🔊</button> <br>
+                        <button id="do_nota" class="btn_do">Dó</button>
+                        <button id="re_nota" class="btn_re">Ré</button>
+                        <button id="mi_nota" class="btn_mi">Mi</button>
+                        <button id="fa_nota" class="btn_fa">Fá</button>
+                        <button id="sol_nota" class="btn_sol">Sol</button>
+                        <button id="la_nota" class="btn_la">Lá</button>
+                        <button id="si_nota" class="btn_si">Si</button>
+                    </div>
+
+                    <div class="cor_luz">
+                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                        <img src="../img/jogos/adivinhe_som/luz_cinza.png">
+                    </div>
+
+                    <p><button onclick="jogar_de_novo()" class="repetir" id="repetir">Jogar de Novo 🔁</button></p>
+                </div>
             </div>
         </center>
     </div>
@@ -159,4 +198,5 @@
 
 </body>
 </html>
-<script type="text/javascript" src="../js/jogos.js"></script>
+<script type="text/javascript" src="../js/piano_vitual.js"></script>
+<script type="text/javascript" src="../js/advinhe_som.js"></script>

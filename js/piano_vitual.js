@@ -1,12 +1,3 @@
-// ESCOLHER JOGO
-function ver_piano_virtual() {
-  piano_vitual.style.display = 'block';
-  adivinhe_som.style.display = 'none';
-}
-function ver_adivinhe_som() {
-  piano_vitual.style.display = 'none';
-  adivinhe_som.style.display = 'block';
-}
 // TECLAS DECLARADAS
 const escala3 = {
     c3_acao: document.getElementById("c3"), 

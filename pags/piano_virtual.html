@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WBPiano - Jogos</title>
-    <link rel="stylesheet" href="../css/jogos.css">
+    <link rel="stylesheet" href="../css/piano_vitual.css">
 </head>
 <body>
     
@@ -29,13 +29,10 @@
     <div class="img_fundo">
         <div class="container">
             <center>
-                <div class="apresentacao">
-                    <p>Divirta-se um pouco com esse instrumento.</p>
-                </div>
                 <div class="menu">
-                    Selecione um entreterimento.<br>
-                    <button class="btn_piano" onclick="ver_piano_virtual()">Piano Virtual</button> 
-                    <button class="btn_som" onclick="ver_adivinhe_som()">Adivinhe o Som</button>
+                    Divirta-se um pouco com esse instrumento.<br>
+                    <button class="btn_teclas" onclick="ver_teclas()">Aparecer Teclas</button> 
+                    <button class="btn_som" onclick="ver_som_teste()">Música Teste</button>
                 </div>
             </center>
         </div>
@@ -107,18 +104,18 @@
                         <button class="tecla branca" onclick="b3_som()"></button>
                     
                         <!-- ESCALA 4 TECLAS -->
-                        <button class="tecla branca" onclick="c4_som()"></button>
-                        <button class="tecla preta" onclick="db4_som()"></button>
-                        <button class="tecla branca" onclick="d4_som()"></button>
-                        <button class="tecla preta" onclick="eb4_som()"></button>
-                        <button class="tecla branca" onclick="e4_som()"></button>
-                        <button class="tecla branca" onclick="f4_som()"></button>
-                        <button class="tecla preta" onclick="gb4_som()"></button>
-                        <button class="tecla branca" onclick="g4_som()"></button>
-                        <button class="tecla preta" onclick="ab4_som()"></button>
-                        <button class="tecla branca" onclick="a4_som()"></button>
-                        <button class="tecla preta" onclick="bb4_som()"></button>
-                        <button class="tecla branca" onclick="b4_som()"></button>
+                        <button class="tecla branca" onclick="c4_som()"><b>a</b></button>
+                        <button class="tecla preta" onclick="db4_som()">w</button>
+                        <button class="tecla branca" onclick="d4_som()">s</button>
+                        <button class="tecla preta" onclick="eb4_som()">e</button>
+                        <button class="tecla branca" onclick="e4_som()">d</button>
+                        <button class="tecla branca" onclick="f4_som()">f</button>
+                        <button class="tecla preta" onclick="gb4_som()">y</button>
+                        <button class="tecla branca" onclick="g4_som()">g</button>
+                        <button class="tecla preta" onclick="ab4_som()">u</button>
+                        <button class="tecla branca" onclick="a4_som()">h</button>
+                        <button class="tecla preta" onclick="bb4_som()">i</button>
+                        <button class="tecla branca" onclick="b4_som()">j</button>
                         
                         <!-- ESCALA 5 TECLAS -->
                         <button class="tecla branca" onclick="c5_som()"></button>
@@ -140,59 +137,6 @@
                     </p>
                 </div>
 
-                <div class="adivinhe_som" id="adivinhe_som">
-                    
-                   <span class="ver_comecar" id="ver_comecar">
-                        <p id="txt_jogo">
-                            Teste seu ouvido musical. Ouça o som da tecla de piano <br>
-                            e selecione a nota que você considere certa. <br>
-                            No final você tera uma avaliação.
-                        </p>
-                        <p><button onclick="jogar()" class="play" id="play">Jogar ⏯</button></p>
-                   </span>
-                   
-                    <span class="ver_jogo" id="ver_jogo">
-                        <div class="jogo">
-                            <img src="../img/jogos/adivinhe_som/notas.jpg" class="notas-img">
-                            <button id="repetir_som" class="btn_rep_som">Repetir Som🔊</button> <br>
-
-                            <select id="nota_escolhida">
-                                <option value="0">Escolha uma Nota</option>
-                                <option value="1">Dó</option>
-                                <option value="2">Ré</option>
-                                <option value="3">Mi</option>
-                                <option value="4">Fá</option>
-                                <option value="5">Sol</option>
-                                <option value="6">Lá</option>
-                                <option value="7">Si</option>
-                            </select>
-                            <button ondblclick="continuar()" id="proximo_som" class="btn_proximo">Próximo Som</button>
-                        </div>
-
-                        <div class="cor_luz">
-                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                            <img src="../img/jogos/adivinhe_som/luz_cinza.png">
-                        </div>
-                    </span>
-                    
-                    <span class="ver_resultado" id="ver_resultado">
-                        <p id="msg_resultado">
-                            Parabéns, você tem um bom ouvido para piano. <br> Seu ouvido é chamado, musicalmente, de ouvido relativo.
-                        </p>
-                        
-                        <p><button onclick="jogar_de_novo()" class="repetir" id="repetir">Jogar de Novo 🔁</button></p>
-                    </span>
-                    
-                </div>
             </div>
         </center>
     </div>
@@ -215,4 +159,5 @@
 </body>
 </html>
 <script type="text/javascript" src="../js/piano_vitual.js"></script>
-<script type="text/javascript" src="../js/advinhe_som.js"></script>
+<script type="text/javascript" src="../js/som_teste.js"></script>
+<script type="text/javascript" src="../js/teclado_piano_virtual.js"></script>

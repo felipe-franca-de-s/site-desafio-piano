@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WBPiano - Jogos</title>
+    <title>WBPiano - Piano Virtual</title>
     <link rel="stylesheet" href="../css/piano_vitual.css">
 </head>
 
@@ -20,7 +20,8 @@
 
             <div class="nav">
                 <ul>
-                    <il><a href="../index.html"> Voltar à Página Inicial.</a></il>
+                    <il>Olá, <span id="usario_x">Usuario X</span></il>
+                    <il><a href="../index.html"> Sair</a></il>
                 </ul>
             </div>
         </div>
@@ -33,10 +34,10 @@
             <center>
                 <div class="menu">
                     Divirta-se um pouco com esse instrumento.<br>
-                    <button class="btn_teclas" onclick="aparecer_teclas()">Aparecer Teclas</button>
-                    <button class="btn_teclas" onclick="esconder_teclas()">Esconder Teclas</button>
-                    <button class="btn_som" onclick="ver_som_teste()">Música Teste</button>
-                </div>
+                    <button id="btn_teclas_aparecer" class="btn_teclas_aparecer" onclick="aparecer_teclas()">
+                        Aparecer Teclado</button>
+                    <button id="btn_teclas_esconder" class="btn_teclas_esconder" onclick="esconder_teclas()">
+                        Esconder Teclado</button>
             </center>
         </div>
         <!--FIM APRESENTAÇÃO-->
@@ -94,88 +95,91 @@
 
                         <!-- ESCALA 3 TECLAS -->
                         <button class="tecla branca" onclick="c3_som()">
-                            <span class="esconder">q</span></button>
+                            <span class="visual">q</span></button>
                         <button class="tecla preta" onclick="db3_som()">
-                            <span class="esconder">2</span></button>
+                            <span class="visual">2</span></button>
                         <button class="tecla branca" onclick="d3_som()">
-                            <span class="esconder">w</span></button>
+                            <span class="visual">w</span></button>
                         <button class="tecla preta" onclick="eb3_som()">
-                            <span class="esconder">3</span></button>
+                            <span class="visual">3</span></button>
                         <button class="tecla branca" onclick="e3_som()">
-                            <span class="esconder">e</span></button>
+                            <span class="visual">e</span></button>
                         <button class="tecla branca" onclick="f3_som()">
-                            <span class="esconder">r</span></button>
+                            <span class="visual">r</span></button>
                         <button class="tecla preta" onclick="gb3_som()">
-                            <span class="esconder">5</span></button>
+                            <span class="visual">5</span></button>
                         <button class="tecla branca" onclick="g3_som()">
-                            <span class="esconder">t</span></button>
+                            <span class="visual">t</span></button>
                         <button class="tecla preta" onclick="ab3_som()">
-                            <span class="esconder">6</span></button>
+                            <span class="visual">6</span></button>
                         <button class="tecla branca" onclick="a3_som()">
-                            <span class="esconder">y</span></button>
+                            <span class="visual">y</span></button>
                         <button class="tecla preta" onclick="bb3_som()">
-                            <span class="esconder">7</span></button>
+                            <span class="visual">7</span></button>
                         <button class="tecla branca" onclick="b3_som()">
-                            <span class="esconder">u</span></button>
+                            <span class="visual">u</span></button>
 
                         <!-- ESCALA 4 TECLAS -->
                         <button class="tecla branca" onclick="c4_som()">
-                            <span class="esconder">i</span></button>
+                            <span class="visual">i</span></button>
                         <button class="tecla preta" onclick="db4_som()">
-                            <span class="esconder">9</span></button>
+                            <span class="visual">9</span></button>
                         <button class="tecla branca" onclick="d4_som()">
-                            <span class="esconder">o</span></button>
+                            <span class="visual">o</span></button>
                         <button class="tecla preta" onclick="eb4_som()">
-                            <span class="esconder">0</span></button>
+                            <span class="visual">0</span></button>
                         <button class="tecla branca" onclick="e4_som()">
-                            <span class="esconder">p</span></button>
+                            <span class="visual">p</span></button>
                         <button class="tecla branca" onclick="f4_som()">
-                            <span class="esconder">z</span></button>
+                            <span class="visual">z</span></button>
                         <button class="tecla preta" onclick="gb4_som()">
-                            <span class="esconder">s</span></button>
+                            <span class="visual">s</span></button>
                         <button class="tecla branca" onclick="g4_som()">
-                            <span class="esconder">x</span></button>
+                            <span class="visual">x</span></button>
                         <button class="tecla preta" onclick="ab4_som()">
-                            <span class="esconder">d</span></button>
+                            <span class="visual">d</span></button>
                         <button class="tecla branca" onclick="a4_som()">
-                            <span class="esconder">c</span></button>
+                            <span class="visual">c</span></button>
                         <button class="tecla preta" onclick="bb4_som()">
-                            <span class="esconder">f</span></button>
+                            <span class="visual">f</span></button>
                         <button class="tecla branca" onclick="b4_som()">
-                            <span class="esconder">v</span></button>
+                            <span class="visual">v</span></button>
 
                         <!-- ESCALA 5 TECLAS -->
                         <button class="tecla branca" onclick="c5_som()">
-                            <span class="esconder">b</span></button>
+                            <span class="visual">b</span></button>
                         <button class="tecla preta" onclick="db5_som()">
-                            <span class="esconder">h</span></button>
+                            <span class="visual">h</span></button>
                         <button class="tecla branca" onclick="d5_som()">
-                            <span class="esconder">n</span></button>
+                            <span class="visual">n</span></button>
                         <button class="tecla preta" onclick="eb5_som()">
-                            <span class="esconder">j</span></button>
+                            <span class="visual">j</span></button>
                         <button class="tecla branca" onclick="e5_som()">
-                            <span class="esconder">m</span></button>
+                            <span class="visual">m</span></button>
                         <button class="tecla branca" onclick="f5_som()">
-                            <span class="esconder">,</span></button>
+                            <span class="visual">,</span></button>
                         <button class="tecla preta" onclick="gb5_som()">
-                            <span class="esconder">l</span></button>
+                            <span class="visual">l</span></button>
                         <button class="tecla branca" onclick="g5_som()">
-                            <span class="esconder">.</span></button>
+                            <span class="visual">.</span></button>
                         <button class="tecla preta" onclick="ab5_som()">
-                            <span class="esconder">ç</span></button>
+                            <span class="visual">ç</span></button>
                         <button class="tecla branca" onclick="a5_som()">
-                            <span class="esconder">;</span></button>
+                            <span class="visual">;</span></button>
                         <button class="tecla preta" onclick="bb5_som()">
-                            <span class="esconder">]</span></button>
+                            <span class="visual">]</span></button>
                         <button class="tecla branca" onclick="b5_som()">
-                            <span class="esconder">/</span></button>
+                            <span class="visual">/</span></button>
                     </div>
                     <!-- NOME DA NOTA -->
                     <p>
                         Nota: <b id="nota_x"> ? </b>
                     </p>
                 </div>
-
+            </div>
+            <div class="menu">
+                <button id="btn_tocar" class="btn_tocar" onclick="tocar_musica_teste()">
+                    ⏯Música Teste</button>
             </div>
         </center>
     </div>
@@ -199,7 +203,6 @@
 </body>
 
 </html>
-<script type="text/javascript" src="../js/piano_vitual.js"></script>
-<script type="text/javascript" src="../js/som_teste.js"></script>
-<script type="text/javascript" src="../js/tecla_piano_virtual.js"></script>
-<script type="text/javascript" src="../js/ver_teclas_piano.js"></script>
+<script type="text/javascript" src="../js/piano_virtual.js"></script>
+<script type="text/javascript" src="../js/musica_teste.js"></script>
+<script type="text/javascript" src="../js/teclas_piano_virtual.js"></script>

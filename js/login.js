@@ -1,4 +1,4 @@
-function verificar(){
+function verificar() {
     //DADOS DOS CAMPOS
     let campo = {
         email: (email.value).trim(),
@@ -7,12 +7,12 @@ function verificar(){
     //VERIFICAR EMAIL
     let ver_arroba = campo.email.indexOf('@') > 0;
     let ver_ponto = campo.email.indexOf('.') > 0;
-    
+
     //VERIFICAR TODOS OS DADOS
-    if(!ver_arroba || !ver_ponto){
+    if (!ver_arroba || !ver_ponto) {
         alert('Email inválido')
-    } else{
+    } else {
         alert('Login Completo')
     }
-    
+
 }

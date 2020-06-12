@@ -25,10 +25,12 @@ body{
 }
 .nav{
     float: right;
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: bold;
 }
 .nav ul li{
     display: inline-block;
-    
 }
 .nav a{
     font-family: Brush Script MT, Brush Script Std, cursive;
@@ -41,7 +43,7 @@ body{
 }
 /*FIM BARRA DE NAVEGAÇÃO*/
 .img_fundo{
-    background-image: url(../img/piano_vitual/piano_colorido.png);
+    background-image: url(../img/piano_virtual/piano_colorido.png);
     background-size: cover;
     width: 100%;
     height: 560px;
@@ -68,12 +70,17 @@ body{
     border-color: white;
     border-radius: 25px;
 }
-.menu .btn_teclas {
+.menu .btn_teclas_aparecer {
     background-color:  #191970;
 }
-.menu .btn_som {
+.menu .btn_teclas_esconder {
+    background-color:  #191970;
+    display: none;
+}
+.menu .btn_tocar {
     background-color:  #483D8B;
 }
+
 
 /* FIM MENU */
 /* APP */
@@ -106,16 +113,17 @@ body{
 }
 .todas_teclas {
     display: flex;
+    cursor: pointer;
 }
-.esconder{
+.visual{
     display: none;
+    font-weight: bold;
     font-family: cursive;
-    font-size: 15px;
+    font-size: 16.5px;
 }
 .tecla {
     border-radius: 5px;
-    cursor: pointer;
-
+    padding-left: 5px;
 }
 .branca{
     width: 37.5px;
@@ -123,6 +131,7 @@ body{
     background-color: white;
     color: black;
     padding-top: 70px;
+    cursor: pointer;
 }
 .preta{
     background-color: black;
@@ -131,24 +140,10 @@ body{
     margin: 0px -11.25px;
     z-index: 2;
     color: white;
+    cursor: pointer;
 }
 /* FIM PIANO VIRTUAL */
 /* FRASE */
-.frase{
-    display: inline-block;
-    font-family: cursive;
-    font-size: 15px;
-    color: white;
-    background-color: #363636;
-    width: auto;
-    padding: 10px 30px;
-    border-radius: 10px;
-}
-.frase p{
-    margin: 0;
-}
-/* FIM FRASE */
-/* CREDITOS */
 .frase{
     display: inline-block;
     font-family: cursive;
@@ -164,6 +159,8 @@ body{
 .frase p{
     margin: 0;
 }
+/* FIM FRASE */
+/* CREDITOS */
 .creditos{
     font-family: cursive;
     font-size: 15px;

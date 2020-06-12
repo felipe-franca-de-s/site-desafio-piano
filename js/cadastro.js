@@ -1,5 +1,3 @@
-
-
 function verificar() {
     //DADOS DOS CAMPOS
     let campo = {

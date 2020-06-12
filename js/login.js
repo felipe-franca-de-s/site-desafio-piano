@@ -11,8 +11,6 @@ function verificar() {
     //VERIFICAR TODOS OS DADOS
     if (!ver_arroba || !ver_ponto) {
         alert('Email inválido')
-    } else {
-        alert('Login Completo')
     }
 
 }

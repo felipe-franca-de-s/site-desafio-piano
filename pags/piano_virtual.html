@@ -15,13 +15,16 @@
         <div class="container">
 
             <div class="logo">
-                <a href="../pags/jogos.html"><img src="../img/index/logo_fixo.png" alt="logo_site"></a>
+                <a href="../pags/piano_virtual.html"><img src="../img/index/logo_fixo.png" alt="logo_site"></a>
             </div>
 
             <div class="nav">
                 <ul>
-                    <il>Olá, <span id="usario_x">Usuario X</span></il>
-                    <il><a href="../index.html"> Sair</a></il>
+                    <il>Olá, <b id="usario_x">Usuario X</b></il> <br>
+                    <il><span id="pagina_inicial" onclick="sair()">
+                            Página Inicial. </span></il>
+                    <il><a href="../index.html">
+                        <span id='btn_sair' class="btn_sair">Sair.</span></a></il>
                 </ul>
             </div>
         </div>
@@ -47,7 +50,10 @@
             <div class="app">
                 <div class="piano_virtual" id="piano_virtual">
 
-                    <p> PIANO VIRTUAL </p>
+                    <p>
+                        PIANO VIRTUAL <br>
+                        Clique na tela ou pressione uma tecla do seu teclado
+                    </p>
 
                     <!-- ESCALA 3 AUDIO -->
                     <audio id="c3" src="../sounds/escala_3/28_c.wav"></audio>
@@ -203,6 +209,15 @@
 </body>
 
 </html>
-<script type="text/javascript" src="../js/piano_virtual.js"></script>
-<script type="text/javascript" src="../js/musica_teste.js"></script>
-<script type="text/javascript" src="../js/teclas_piano_virtual.js"></script>
+<script type="text/javascript" src="../js/piano/piano_virtual.js"></script>
+<script type="text/javascript" src="../js/piano/teclas_piano_virtual.js"></script>
+<script type="text/javascript" src="../js/piano/musica_teste.js"></script>
+<script>
+    function sair() {
+        let pergunta = confirm("Você tem certeza que deseja sair? Se for OK clique em Sair.");
+        if (pergunta == true) {
+            pagina_inicial.style.display = 'none';
+            btn_sair.style.display = 'block';
+        } 
+    }
+</script>

@@ -1,3 +1,4 @@
+// VISUALIZAR OPÇÕES DO MENU
 function ver_historia() {
     msg_titulo.innerHTML = 'História';
     historia.style.display = 'block';

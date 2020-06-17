@@ -29,7 +29,7 @@
         <div class="container">
             <a href="../index.html"><img src="../img/cadastrar/voltar.png" alt=""></a>
             
-            <form class="box_cadastro" action="./login.html">
+            <form class="box_cadastro">
                 <h1>
                     Cadastre-se
                 </h1>
@@ -38,29 +38,24 @@
                 </h3> 
                 <div class="dados">
                     <div class="descricao">
-                        <label for="nome">Nome completo:</label>  <br>
-                        <label for="dt_nasc">Data de Nascimento:</label> <br>
-                        <label for="sexo">Sexo:</label> <br>
+                        <label for="prim_nome">Primeiro Nome:</label>  <br>
+                        <label for="sobrenome">Sobrenome Completo:</label>  <br>
                         <label for="email">Email:</label> <br>
+                        <label for="rep_email"><u>Repetir</u> Email:</label> <br>
                         <label for="senha">Senha: </label> <br>
                         <label for="rep_senha"><u>Repetir</u> Senha:</label> <br>
                     </div>
                     <div class="campo">
-                        <input type="text"id="nome"> <br>
-                        <input type="date" id="dt_nasc"> <br>
-                        <select id="sexo">
-                            <option value="0">Escolha um sexo</option>
-                            <option value="m">Masculino</option>
-                            <option value="f">Feminino</option>
-                            <option value="i">Indefinido</option>
-                        </select> <br>
-                        <input type="text" id="email" placeholder="email@com.br"> <br>
-                        <input type="password" id="senha"> <br>
+                        <input type="text" id="prim_nome"> <br>
+                        <input type="text" id="sobrenome"> <br>
+                        <input type="text" id="email" placeholder="exemplo@domínio.com"> <br>
+                        <input type="text" id="rep_email"> <br>
+                        <input type="password" id="senha" placeholder="No máximo 8 caracteres"> <br>
                         <input type="password" id="rep_senha"> <br>
                     </div>
                 </div>
                 
-                <input type="submit" class="enviar" value="Cadastrar" onclick="verificar()" >
+                <input type="button" class="enviar" value="Cadastrar" onclick="verificar()" >
             </form>
         </div>
     </div>
@@ -75,7 +70,7 @@
             </div>
         </div>
         <div class="creditos">
-            Feito por Felipe França
+            Felipe França
         </div>
     </center>
     <!--FIM RODAPÉ-->

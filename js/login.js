@@ -11,6 +11,11 @@ function verificar() {
     //VERIFICAR TODOS OS DADOS
     if (!ver_arroba || !ver_ponto) {
         alert('Email inválido')
+    } else {if(campo.senha == ''){
+        alert('O campo senha vazio')
+    } else {
+        window.location.href = "piano_virtual.html";
     }
+} 
 
 }

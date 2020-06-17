@@ -20,11 +20,8 @@
 
             <div class="nav">
                 <ul>
-                    <il>Olá, <b id="usario_x">Usuario X</b></il> <br>
-                    <il><span id="pagina_inicial" onclick="sair()">
-                            Página Inicial. </span></il>
-                    <il><a href="../index.html">
-                        <span id='btn_sair' class="btn_sair">Sair.</span></a></il>
+                    <il>Olá, <b id="usario_x">Usuario X</b></il>
+                    <il><span id='btn_sair' onclick="sair()">Sair.</span></il>
                 </ul>
             </div>
         </div>
@@ -201,23 +198,22 @@
             </div>
         </div>
         <div class="creditos">
-            Feito por Felipe França
+            Felipe França
         </div>
     </center>
     <!--FIM RODAPÉ-->
-
+    
 </body>
-
+<a href="piano_virtual.html"></a>
 </html>
 <script type="text/javascript" src="../js/piano/piano_virtual.js"></script>
 <script type="text/javascript" src="../js/piano/teclas_piano_virtual.js"></script>
 <script type="text/javascript" src="../js/piano/musica_teste.js"></script>
 <script>
     function sair() {
-        let pergunta = confirm("Você tem certeza que deseja sair? Se for OK clique em Sair.");
+        let pergunta = confirm("Você tem certeza que deseja sair?");
         if (pergunta == true) {
-            pagina_inicial.style.display = 'none';
-            btn_sair.style.display = 'block';
-        } 
+            window.location.href = '../index.html';
+        }
     }
 </script>

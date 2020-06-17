@@ -1,35 +1,41 @@
 function verificar() {
-    //DADOS DOS CAMPOS
+    // DADOS DOS CAMPOS
     let campo = {
-        nome: (nome.value).trim().toUpperCase(),
-        dt_nasc: dt_nasc.value,
-        sexo: sexo.value,
+        prim_nome: (prim_nome.value).trim().toUpperCase(),
+        sobrenome: (sobrenome.value).trim().toUpperCase(),
         email: (email.value).trim(),
+        rep_email: (rep_email.value).trim(),
         senha: senha.value,
         rep_senha: rep_senha.value
     };
-    //VERIFICAR EMAIL
+
+    // VERIFICAR CAMPOS VAZIOS
+    let vazio_prim_nome = campo.prim_nome.length == 0;
+    let vazio_sobrenome = campo.sobrenome.length == 0;
+    let vazio_email = campo.email.length == 0;
+    let vazio_rep_email = campo.rep_email.length == 0;
+    let vazio_senha = campo.senha.length == 0;
+    let vazio_rep_senha = campo.rep_senha.length == 0;
+    // VERIFICAR NOME
+    let tamanho_prim_nome = campo.prim_nome.length <= 25;
+    let tamanho_sobrenome = campo.sobrenome.length <= 50;
+    // VERIFICAR EMAIL
     let ver_arroba = campo.email.indexOf('@') > 0;
-    let ver_ponto = campo.email.indexOf('.') > 0;
-    //VERIFICAR SEXO
-    if (campo.sexo == 'm') {
-        campo.sexo = 'MASCULINO';
-    } else if (campo.sexo == 'f') {
-        campo.sexo = 'FEMININO';
-    } else if (campo.sexo == 'i') {
-        campo.sexo = 'INDEFINIDO';
-    }
-    //VERIFICAR SENHA
+    let ver_com = campo.email.endsWith('.com');
+    let ver_br = campo.email.endsWith('.br');
+    let email_igual = campo.email == campo.rep_email;
+    // VERIFICAR SENHA
+    let tamanho_senha = campo.senha.length <= 8;
     let ver_senha = campo.senha == campo.rep_senha;
 
-    //VERIFICAR TODOS OS DADOS
-    if (!ver_senha) {
-        alert(`Cadastro Incorreto. Senha diferente`)
-    } else if (!ver_arroba || !ver_ponto) {
-        alert('Cadastro Incorreto. Email inválido')
-    } else {
-        alert('Cadastro Completo')
-        alert(`${campo.nome};${campo.dt_nasc};${campo.sexo};${campo.email};${campo.senha}`)
+    // VALIDANDO TODOS OS DADOS
+    // campo vazio
+    if (vazio_prim_nome || vazio_sobrenome || vazio_email || vazio_rep_email || vazio_senha || vazio_rep_senha){
+        alert('Campo vazio. Coloque todos os dados.')
     }
-
+    // nome
+    if(!tamanho_prim_nome){
+        prim_nome.value = '';
+        prim_nome.value += 'INSIRA UM NOME MENOR';
+    }
 }

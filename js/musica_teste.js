@@ -5,6 +5,7 @@ function tocar_musica_teste() {
     btn_tocar.style.display = 'none';
     setTimeout(function () {
         escala4.c4_acao.currentTime = 0; // ---------- DO
+        escala4.c4_acao.volume = 0.3;
         escala4.c4_acao.play();
         if (escala4.c4_acao.play()) {
             nota_x.innerHTML = 'Dó';
@@ -16,6 +17,7 @@ function tocar_musica_teste() {
     }, 500);
     setTimeout(function () {
         escala4.c4_acao.currentTime = 0; // ---------- DO
+        escala4.c4_acao.volume = 0.3;
         escala4.c4_acao.play();
         if (escala4.c4_acao.play()) {
             nota_x.innerHTML = 'Dó';
@@ -27,6 +29,7 @@ function tocar_musica_teste() {
     }, 1000);
     setTimeout(function () {
         escala4.d4_acao.currentTime = 0; // ---------- RE
+        escala4.d4_acao.volume = 0.3;
         escala4.d4_acao.play();
         if (escala4.d4_acao.play()) {
             nota_x.innerHTML = 'Ré';
@@ -38,6 +41,7 @@ function tocar_musica_teste() {
     }, 1500);
     setTimeout(function () {
         escala4.c4_acao.currentTime = 0; // ---------- DO
+        escala4.c4_acao.volume = 0.3;
         escala4.c4_acao.play();
         if (escala4.c4_acao.play()) {
             nota_x.innerHTML = 'Dó';
@@ -49,6 +53,7 @@ function tocar_musica_teste() {
     }, 2000);
     setTimeout(function () {
         escala4.f4_acao.currentTime = 0; // ---------- FA
+        escala4.f4_acao.volume = 0.3;
         escala4.f4_acao.play();
         if (escala4.f4_acao.play()) {
             nota_x.innerHTML = 'Fá';
@@ -60,6 +65,7 @@ function tocar_musica_teste() {
     }, 2500);
     setTimeout(function () {
         escala4.e4_acao.currentTime = 0; // ---------- MI
+        escala4.e4_acao.volume = 0.3;
         escala4.e4_acao.play();
         if (escala4.e4_acao.play()) {
             nota_x.innerHTML = 'Mi';
@@ -73,6 +79,7 @@ function tocar_musica_teste() {
     // --------------------------------------------------------- PARTE 2
     setTimeout(function () {
         escala4.c4_acao.currentTime = 0; // ---------- DO
+        escala4.c4_acao.volume = 0.3;
         escala4.c4_acao.play();
         if (escala4.c4_acao.play()) {
             nota_x.innerHTML = 'Dó';
@@ -84,6 +91,7 @@ function tocar_musica_teste() {
     }, 4000);
     setTimeout(function () {
         escala4.c4_acao.currentTime = 0; // ---------- DO
+        escala4.c4_acao.volume = 0.3;
         escala4.c4_acao.play();
         if (escala4.c4_acao.play()) {
             nota_x.innerHTML = 'Dó';
@@ -95,6 +103,7 @@ function tocar_musica_teste() {
     }, 4500);
     setTimeout(function () {
         escala4.d4_acao.currentTime = 0; // ---------- RE
+        escala4.d4_acao.volume = 0.3;
         escala4.d4_acao.play();
         if (escala4.d4_acao.play()) {
             nota_x.innerHTML = 'Ré';
@@ -106,6 +115,7 @@ function tocar_musica_teste() {
     }, 5000);
     setTimeout(function () {
         escala4.c4_acao.currentTime = 0; // ---------- DO
+        escala4.c4_acao.volume = 0.3;
         escala4.c4_acao.play();
         if (escala4.c4_acao.play()) {
             nota_x.innerHTML = 'Dó';
@@ -117,6 +127,7 @@ function tocar_musica_teste() {
     }, 5500);
     setTimeout(function () {
         escala4.g4_acao.currentTime = 0; // ---------- SOL
+        escala4.g4_acao.volume = 0.3;
         escala4.g4_acao.play();
         if (escala4.g4_acao.play()) {
             nota_x.innerHTML = 'Sol';
@@ -128,6 +139,7 @@ function tocar_musica_teste() {
     }, 6000);
     setTimeout(function () {
         escala4.f4_acao.currentTime = 0; // ---------- FA
+        escala4.f4_acao.volume = 0.3;
         escala4.f4_acao.play();
         if (escala4.f4_acao.play()) {
             nota_x.innerHTML = 'Fá';
@@ -141,6 +153,7 @@ function tocar_musica_teste() {
     // --------------------------------------------------------- PARTE 3
     setTimeout(function () {
         escala4.c4_acao.currentTime = 0; // ---------- DO
+        escala4.c4_acao.volume = 0.3;
         escala4.c4_acao.play();
         if (escala4.c4_acao.play()) {
             nota_x.innerHTML = 'Dó';
@@ -152,6 +165,7 @@ function tocar_musica_teste() {
     }, 7500);
     setTimeout(function () {
         escala4.c4_acao.currentTime = 0; // ---------- DO
+        escala4.c4_acao.volume = 0.3;
         escala4.c4_acao.play();
         if (escala4.c4_acao.play()) {
             nota_x.innerHTML = 'Dó';
@@ -163,6 +177,7 @@ function tocar_musica_teste() {
     }, 8000);
     setTimeout(function () {
         escala5.c5_acao.currentTime = 0; // ----------- DO AGUDO
+        escala5.c5_acao.volume = 0.3;
         escala5.c5_acao.play();
         if (escala5.c5_acao.play()) {
             nota_x.innerHTML = 'Dó';
@@ -174,6 +189,7 @@ function tocar_musica_teste() {
     }, 8500);
     setTimeout(function () {
         escala4.a4_acao.currentTime = 0; // ---------- LA
+        escala4.a4_acao.volume = 0.3;
         escala4.a4_acao.play();
         if (escala4.a4_acao.play()) {
             nota_x.innerHTML = 'Lá';
@@ -185,6 +201,7 @@ function tocar_musica_teste() {
     }, 9000);
     setTimeout(function () {
         escala4.f4_acao.currentTime = 0; // ---------- FA
+        escala4.f4_acao.volume = 0.3;
         escala4.f4_acao.play();
         if (escala4.f4_acao.play()) {
             nota_x.innerHTML = 'Fá';
@@ -196,6 +213,7 @@ function tocar_musica_teste() {
     }, 9500);
     setTimeout(function () {
         escala4.e4_acao.currentTime = 0; // ---------- MI
+        escala4.e4_acao.volume = 0.3;
         escala4.e4_acao.play();
         if (escala4.e4_acao.play()) {
             nota_x.innerHTML = 'Mi';
@@ -207,6 +225,7 @@ function tocar_musica_teste() {
     }, 10000);
     setTimeout(function () {
         escala4.d4_acao.currentTime = 0; // ---------- RE
+        escala4.d4_acao.volume = 0.3;
         escala4.d4_acao.play();
         if (escala4.d4_acao.play()) {
             nota_x.innerHTML = 'Ré';
@@ -220,6 +239,7 @@ function tocar_musica_teste() {
     // --------------------------------------------------------- PARTE 4
     setTimeout(function () {
         escala4.bb4_acao.currentTime = 0; // --------- SIb
+        escala4.bb4_acao.volume = 0.3;
         escala4.bb4_acao.play();
         if (escala4.bb4_acao.play()) {
             nota_x.innerHTML = 'Sib';
@@ -231,6 +251,7 @@ function tocar_musica_teste() {
     }, 11500);
     setTimeout(function () {
         escala4.bb4_acao.currentTime = 0; // --------- SIb
+        escala4.bb4_acao.volume = 0.3;
         escala4.bb4_acao.play();
         if (escala4.bb4_acao.play()) {
             nota_x.innerHTML = 'Sib';
@@ -242,6 +263,7 @@ function tocar_musica_teste() {
     }, 12000);
     setTimeout(function () {
         escala4.a4_acao.currentTime = 0; // ---------- LA
+        escala4.a4_acao.volume = 0.3;
         escala4.a4_acao.play();
         if (escala4.a4_acao.play()) {
             nota_x.innerHTML = 'Lá';
@@ -253,6 +275,7 @@ function tocar_musica_teste() {
     }, 12500);
     setTimeout(function () {
         escala4.f4_acao.currentTime = 0; // ---------- FA
+        escala4.f4_acao.volume = 0.3;
         escala4.f4_acao.play();
         if (escala4.f4_acao.play()) {
             nota_x.innerHTML = 'Fá';
@@ -264,6 +287,7 @@ function tocar_musica_teste() {
     }, 13000);
     setTimeout(function () {
         escala4.g4_acao.currentTime = 0; // ---------- SOL
+        escala4.g4_acao.volume = 0.3;
         escala4.g4_acao.play();
         if (escala4.g4_acao.play()) {
             nota_x.innerHTML = 'Sol';
@@ -275,6 +299,7 @@ function tocar_musica_teste() {
     }, 13500);
     setTimeout(function () {
         escala4.f4_acao.currentTime = 0; // ---------- FA
+        escala4.f4_acao.volume = 0.3;
         escala4.f4_acao.play();
         if (escala4.f4_acao.play()) {
             nota_x.innerHTML = 'Fá';

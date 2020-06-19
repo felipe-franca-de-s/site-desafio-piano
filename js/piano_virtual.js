@@ -51,6 +51,7 @@ const escala5 = {
 function c3_som() {
   // ZERAR SOM TECLA
   escala3.c3_acao.currentTime = 0;
+  escala3.c3_acao.volume = 0.3;
   // PLAY TECLA
   escala3.c3_acao.play();
   // NOME TECLA
@@ -64,6 +65,7 @@ function c3_som() {
 }
 function db3_som() {
   escala3.db3_acao.currentTime = 0;
+  escala3.db3_acao.volume = 0.3;
   escala3.db3_acao.play();
   if (escala3.db3_acao.play()) {
     nota_x.innerHTML = 'Réb';
@@ -75,6 +77,7 @@ function db3_som() {
 }
 function d3_som() {
   escala3.d3_acao.currentTime = 0;
+  escala3.d3_acao.volume = 0.3;
   escala3.d3_acao.play();
   if (escala3.d3_acao.play()) {
     nota_x.innerHTML = 'Ré';
@@ -86,6 +89,7 @@ function d3_som() {
 }
 function eb3_som() {
   escala3.eb3_acao.currentTime = 0;
+  escala3.eb3_acao.volume = 0.3;
   escala3.eb3_acao.play();
   if (escala3.eb3_acao.play()) {
     nota_x.innerHTML = 'Mib';
@@ -97,6 +101,7 @@ function eb3_som() {
 }
 function e3_som() {
   escala3.e3_acao.currentTime = 0;
+  escala3.e3_acao.volume = 0.3;
   escala3.e3_acao.play();
   if (escala3.e3_acao.play()) {
     nota_x.innerHTML = 'Mi';
@@ -108,6 +113,7 @@ function e3_som() {
 }
 function f3_som() {
   escala3.f3_acao.currentTime = 0;
+  escala3.f3_acao.volume = 0.3;
   escala3.f3_acao.play();
   if (escala3.f3_acao.play()) {
     nota_x.innerHTML = 'Fá';
@@ -119,6 +125,7 @@ function f3_som() {
 }
 function gb3_som() {
   escala3.gb3_acao.currentTime = 0;
+  escala3.gb3_acao.volume = 0.3;
   escala3.gb3_acao.play();
   if (escala3.gb3_acao.play()) {
     nota_x.innerHTML = 'Solb';
@@ -130,6 +137,7 @@ function gb3_som() {
 }
 function g3_som() {
   escala3.g3_acao.currentTime = 0;
+  escala3.g3_acao.volume = 0.3;
   escala3.g3_acao.play();
   if (escala3.g3_acao.play()) {
     nota_x.innerHTML = 'Sol';
@@ -141,6 +149,7 @@ function g3_som() {
 }
 function ab3_som() {
   escala3.ab3_acao.currentTime = 0;
+  escala3.ab3_acao.volume = 0.3;
   escala3.ab3_acao.play();
   if (escala3.ab3_acao.play()) {
     nota_x.innerHTML = 'Láb';
@@ -152,6 +161,7 @@ function ab3_som() {
 }
 function a3_som() {
   escala3.a3_acao.currentTime = 0;
+  escala3.a3_acao.volume = 0.3;
   escala3.a3_acao.play();
   if (escala3.a3_acao.play()) {
     nota_x.innerHTML = 'Lá';
@@ -163,6 +173,7 @@ function a3_som() {
 }
 function bb3_som() {
   escala3.bb3_acao.currentTime = 0;
+  escala3.bb3_acao.volume = 0.3;
   escala3.bb3_acao.play();
   if (escala3.bb3_acao.play()) {
     nota_x.innerHTML = 'Sib';
@@ -174,6 +185,7 @@ function bb3_som() {
 }
 function b3_som() {
   escala3.b3_acao.currentTime = 0;
+  escala3.b3_acao.volume = 0.3;
   escala3.b3_acao.play();
   if (escala3.b3_acao.play()) {
     nota_x.innerHTML = 'Si';
@@ -186,6 +198,7 @@ function b3_som() {
 // ESCALA 4  SOM ---------------------------------------------
 function c4_som() {
   escala4.c4_acao.currentTime = 0;
+  escala4.c4_acao.volume = 0.3;
   escala4.c4_acao.play();
   if (escala4.c4_acao.play()) {
     nota_x.innerHTML = 'Dó';
@@ -197,6 +210,7 @@ function c4_som() {
 }
 function db4_som() {
   escala4.db4_acao.currentTime = 0;
+  escala4.db4_acao.volume = 0.3;
   escala4.db4_acao.play();
   if (escala4.db4_acao.play()) {
     nota_x.innerHTML = 'Réb';
@@ -208,6 +222,7 @@ function db4_som() {
 }
 function d4_som() {
   escala4.d4_acao.currentTime = 0;
+  escala4.d4_acao.volume = 0.3;
   escala4.d4_acao.play();
   if (escala4.d4_acao.play()) {
     nota_x.innerHTML = 'Ré';
@@ -219,6 +234,7 @@ function d4_som() {
 }
 function eb4_som() {
   escala4.eb4_acao.currentTime = 0;
+  escala4.eb4_acao.volume = 0.3;
   escala4.eb4_acao.play();
   if (escala4.eb4_acao.play()) {
     nota_x.innerHTML = 'Mib';
@@ -230,6 +246,7 @@ function eb4_som() {
 }
 function e4_som() {
   escala4.e4_acao.currentTime = 0;
+  escala4.e4_acao.volume = 0.3;
   escala4.e4_acao.play();
   if (escala4.e4_acao.play()) {
     nota_x.innerHTML = 'Mi';
@@ -241,6 +258,7 @@ function e4_som() {
 }
 function f4_som() {
   escala4.f4_acao.currentTime = 0;
+  escala4.f4_acao.volume = 0.3;
   escala4.f4_acao.play();
   if (escala4.f4_acao.play()) {
     nota_x.innerHTML = 'Fá';
@@ -252,6 +270,7 @@ function f4_som() {
 }
 function gb4_som() {
   escala4.gb4_acao.currentTime = 0;
+  escala4.gb4_acao.volume = 0.3;
   escala4.gb4_acao.play();
   if (escala4.gb4_acao.play()) {
     nota_x.innerHTML = 'Solb';
@@ -263,6 +282,7 @@ function gb4_som() {
 }
 function g4_som() {
   escala4.g4_acao.currentTime = 0;
+  escala4.g4_acao.volume = 0.3;
   escala4.g4_acao.play();
   if (escala4.g4_acao.play()) {
     nota_x.innerHTML = 'Sol';
@@ -274,6 +294,7 @@ function g4_som() {
 }
 function ab4_som() {
   escala4.ab4_acao.currentTime = 0;
+  escala4.ab4_acao.volume = 0.3;
   escala4.ab4_acao.play();
   if (escala4.ab4_acao.play()) {
     nota_x.innerHTML = 'Láb';
@@ -285,6 +306,7 @@ function ab4_som() {
 }
 function a4_som() {
   escala4.a4_acao.currentTime = 0;
+  escala4.a4_acao.volume = 0.3;
   escala4.a4_acao.play();
   if (escala4.a4_acao.play()) {
     nota_x.innerHTML = 'Lá';
@@ -296,6 +318,7 @@ function a4_som() {
 }
 function bb4_som() {
   escala4.bb4_acao.currentTime = 0;
+  escala4.bb4_acao.volume = 0.3;
   escala4.bb4_acao.play();
   if (escala4.bb4_acao.play()) {
     nota_x.innerHTML = 'Sib';
@@ -307,6 +330,7 @@ function bb4_som() {
 }
 function b4_som() {
   escala4.b4_acao.currentTime = 0;
+  escala4.b4_acao.volume = 0.3;
   escala4.b4_acao.play();
   if (escala4.b4_acao.play()) {
     nota_x.innerHTML = 'Si';
@@ -319,6 +343,7 @@ function b4_som() {
 // ESCALA 5 SOM ---------------------------------------------
 function c5_som() {
   escala5.c5_acao.currentTime = 0;
+  escala5.c5_acao.volume = 0.3;
   escala5.c5_acao.play();
   if (escala5.c5_acao.play()) {
     nota_x.innerHTML = 'Dó';
@@ -330,6 +355,7 @@ function c5_som() {
 }
 function db5_som() {
   escala5.db5_acao.currentTime = 0;
+  escala5.db5_acao.volume = 0.3;
   escala5.db5_acao.play();
   if (escala5.db5_acao.play()) {
     nota_x.innerHTML = 'Réb';
@@ -341,6 +367,7 @@ function db5_som() {
 }
 function d5_som() {
   escala5.d5_acao.currentTime = 0;
+  escala5.d5_acao.volume = 0.3;
   escala5.d5_acao.play();
   if (escala5.d5_acao.play()) {
     nota_x.innerHTML = 'Ré';
@@ -352,6 +379,7 @@ function d5_som() {
 }
 function eb5_som() {
   escala5.eb5_acao.currentTime = 0;
+  escala5.eb5_acao.volume = 0.3;
   escala5.eb5_acao.play();
   if (escala5.eb5_acao.play()) {
     nota_x.innerHTML = 'Mib';
@@ -363,6 +391,7 @@ function eb5_som() {
 }
 function e5_som() {
   escala5.e5_acao.currentTime = 0;
+  escala5.e5_acao.volume = 0.3;
   escala5.e5_acao.play();
   if (escala5.e5_acao.play()) {
     nota_x.innerHTML = 'Mi';
@@ -374,6 +403,7 @@ function e5_som() {
 }
 function f5_som() {
   escala5.f5_acao.currentTime = 0;
+  escala5.f5_acao.volume = 0.3;
   escala5.f5_acao.play();
   if (escala5.f5_acao.play()) {
     nota_x.innerHTML = 'Fá';
@@ -385,6 +415,7 @@ function f5_som() {
 }
 function gb5_som() {
   escala5.gb5_acao.currentTime = 0;
+  escala5.gb5_acao.volume = 0.3;
   escala5.gb5_acao.play();
   if (escala5.gb5_acao.play()) {
     nota_x.innerHTML = 'Solb';
@@ -396,6 +427,7 @@ function gb5_som() {
 }
 function g5_som() {
   escala5.g5_acao.currentTime = 0;
+  escala5.g5_acao.volume = 0.3;
   escala5.g5_acao.play();
   if (escala5.g5_acao.play()) {
     nota_x.innerHTML = 'Sol';
@@ -407,6 +439,7 @@ function g5_som() {
 }
 function ab5_som() {
   escala5.ab5_acao.currentTime = 0;
+  escala5.ab5_acao.volume = 0.3;
   escala5.ab5_acao.play();
   if (escala5.ab5_acao.play()) {
     nota_x.innerHTML = 'Láb';
@@ -418,6 +451,7 @@ function ab5_som() {
 }
 function a5_som() {
   escala5.a5_acao.currentTime = 0;
+  escala5.a5_acao.volume = 0.3;
   escala5.a5_acao.play();
   if (escala5.a5_acao.play()) {
     nota_x.innerHTML = 'Lá';
@@ -429,6 +463,7 @@ function a5_som() {
 }
 function bb5_som() {
   escala5.bb5_acao.currentTime = 0;
+  escala5.bb5_acao.volume = 0.3;
   escala5.bb5_acao.play();
   if (escala5.bb5_acao.play()) {
     nota_x.innerHTML = 'Sib';
@@ -440,6 +475,7 @@ function bb5_som() {
 }
 function b5_som() {
   escala5.b5_acao.currentTime = 0;
+  escala5.b5_acao.volume = 0.3;
   escala5.b5_acao.play();
   if (escala5.b5_acao.play()) {
     nota_x.innerHTML = 'Si';

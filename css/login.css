@@ -41,10 +41,10 @@ body{
 /*FIM BARRA DE NAVEGAÇÃO*/
 /* CADASTRO */
 .img_fundo{
-    background-image: url(../img/login/piano_fundo.png);
+    background-image: url(../img/piano_lg.png);
     background-size: cover;
     width: 100%;
-    height: 465px;
+    height: 444px;
     padding-top: 15px;
 }
 img{

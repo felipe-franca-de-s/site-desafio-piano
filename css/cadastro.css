@@ -10,7 +10,7 @@ body{
 }
 /*BARRA DE NAVEGAÇÃO*/
 .img_fundo{
-    background-image: url(../img/cadastrar/piano_fundo2.png);
+    background-image: url(../img/piano_cad.png);
     background-size: cover;
     width: 100%;
     height: 465px;

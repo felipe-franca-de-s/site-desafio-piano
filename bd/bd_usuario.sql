@@ -1,11 +1,9 @@
 create database usuario;
 
 create table cadastro(
-id_cadastro int primary key auto_increment,
-prim_nome varchar (25),
+id_cadastro int primary key identity,
+prim_nome varchar (20),
 sobrenome varchar (50),
-dt_Nasc date,
-sexo varchar (15),
 email varchar (50),
-senha char (8)
+senha varchar (30)
 );

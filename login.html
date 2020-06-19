@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WBPiano - Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <div class="header">
+        <div class="container">
+
+            <div class="logo">
+                <a href="./index.html"><img src="./img/logo_preto.png" alt="logo_site"></a>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <il><a href="./cadastro.html">Cadastrar.</a></il>
+                </ul>   
+            </div>
+
+        </div>
+    </div>
+    <!--FIM BARRA DE NAVEGAÇÃO-->
+    <!-- CADASTRO -->
+    <div class="img_fundo">
+        <div class="container">
+            <a href="./index.html"><img src="./img/voltar.png" alt=""></a>
+            
+            <form class="box_cadastro" >
+                <h1>
+                    Login
+                </h1>
+            
+                <h3>
+                    Informe seu e-mail e senha cadastrados para acessar o conteúdo exclusivo.
+                </h3> 
+                <div class="dados">
+                    <div class="descricao">
+                        <label for="email">E-mail:</label><br>
+                        <label for="senha">Senha:</label> <br>
+                    </div>
+                    <div class="campo">
+                        <input type="text" id="email" placeholder="exemplo@domínio.com"> <br>
+                        <input type="password" id="senha" placeholder="No mínimo 8 caracteres"> <br>
+                        
+                    </div>
+                </div>
+                
+                <input type="button" class="entrar" value="Entrar" onclick="verificar()" >
+            </form>
+        </div>
+    </div>
+    <!-- FIM CADASTRO -->
+    <!--RODAPÉ-->
+    <center>
+        <div class="container">
+            <div class="frase">
+                <p> "Como teclas de um piano afinado assim é a boca harmoniosa de uma pessoa que sabe ressoar palavras de edificação." <br> Helgir Girodo
+                </p>
+            </div>
+        </div>
+        <div class="creditos">
+            Felipe França
+        </div>
+    </center>
+    <!--FIM RODAPÉ-->
+</body>
+</html>
+<script type="text/javascript" src="./js/login.js"></script>

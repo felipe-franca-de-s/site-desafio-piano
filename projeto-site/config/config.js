@@ -8,11 +8,11 @@ module.exports = {
     storage: ":memory:"
   },
   production: {
-    username: 'adminlocal',
-    password: '#Projectfraise2020',
-    database: 'bdfraise',
-    host: 'svrfraise.database.windows.net',
-    dialect: 'mssql',
+    username: 'usuario',
+    password: '12345678',
+    database: 'site',
+    host: '127.0.0.1',
+    dialect: 'mysql',
     xuse_env_variable: 'DATABASE_URL',
     dialectOptions: {
       options: {

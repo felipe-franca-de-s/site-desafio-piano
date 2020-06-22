@@ -1,38 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Página com exemplo de Autenticação (Login)</title>
-
+    <title>WBPiano - Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="shortcut icon" href="./img/icone_pag.png" type="image/x-icon" />
 </head>
-
 <body>
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <div class="header">
+        <div class="container">
 
-    <form id="form_login" method="post" onsubmit="return entrar()">
-        Usuário: <input type="text" name="login">
-        <br>
-        Senha: <input type="password" name="senha">
-        <br>
-        <button id="btn_entrar">Entrar</button>
-    </form>
-    
-    <img src="aguarde.gif" id="img_aguarde" style="display: none;">
-    
-    <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
-        
+            <div class="logo">
+                <a href="./index.html"><img src="./img/logo_preto.png" alt="logo_site"></a>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <il><a href="./cadastro.html">Cadastrar.</a></il>
+                </ul>   
+            </div>
+
+        </div>
     </div>
-
+    <!--FIM BARRA DE NAVEGAÇÃO-->
+    <!-- CADASTRO -->
+    <div class="img_fundo">
+        <div class="container">
+            <a href="./index.html"><img src="./img/voltar.png" alt=""></a>
+            
+            <form class="box_cadastro" id="entrar_pag_bonus" method="post" onsubmit="return entrar()">
+                <h1>
+                    Login
+                </h1>
+            
+                <h3>
+                    Informe seu e-mail e senha cadastrados para acessar o conteúdo exclusivo.
+                </h3> 
+                <div class="dados">
+                    <div class="descricao">
+                        <label for="email">E-mail:</label><br>
+                        <label for="senha">Senha:</label> <br>
+                    </div>
+                    <div class="campo">
+                        <input type="text" name="login" autofocus id="email" placeholder="exemplo@domínio.com"> <br>
+                        <input type="password" name="senha" autofocus id="senha" placeholder="No mínimo 8 caracteres"> <br>
+                        
+                    </div>
+                </div>
+                
+                <button class="entrar">Entrar</button>
+            </form>
+        </div>
+    </div>
+    <!-- FIM CADASTRO -->
+    <!--RODAPÉ-->
+    <center>
+        <div class="container">
+            <div class="frase">
+                <p> "Como teclas de um piano afinado assim é a boca harmoniosa de uma pessoa que sabe ressoar palavras de edificação." <br> Helgir Girodo
+                </p>
+            </div>
+        </div>
+        <div class="creditos">
+            Felipe França
+        </div>
+    </center>
+    <!--FIM RODAPÉ-->
 </body>
-
 </html>
+<!-- <script type="text/javascript" src="./js/login.js"></script> -->
 <script>
-
     function entrar() {
-        aguardar();
-        var formulario = new URLSearchParams(new FormData(form_login));
+        var formulario = new URLSearchParams(new FormData(entrar_pag_bonus));
         fetch("/usuarios/autenticar", {
             method: "POST",
             body: formulario
@@ -42,10 +83,10 @@
 
                 resposta.json().then(json => {
 
-                    sessionStorage.login_usuario_meuapp = json.nomeUsuario;
-                    sessionStorage.nome_usuario_meuapp = json.nomeUsuario;
+                    sessionStorage.login_usuario_meuapp = json.email;
+                    sessionStorage.nome_usuario_meuapp = json.prim_nome;
                     
-                    window.location.href = 'grafico-chartjs.html';
+                    window.location.href = 'piano_virtual.html';
                 });
 
             } else {
@@ -61,18 +102,4 @@
 
         return false;
     }
-
-    function aguardar() {
-        btn_entrar.disabled = true;
-        img_aguarde.style.display = 'block';
-        div_erro.style.display = 'none';
-    }
-
-    function finalizar_aguardar(resposta) {
-        btn_entrar.disabled = false;
-        img_aguarde.style.display= 'none';
-        div_erro.style.display = 'block';
-        div_erro.innerHTML = resposta;
-    }
-
 </script>

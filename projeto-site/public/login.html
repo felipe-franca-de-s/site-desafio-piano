@@ -70,36 +70,4 @@
     <!--FIM RODAPÉ-->
 </body>
 </html>
-<!-- <script type="text/javascript" src="./js/login.js"></script> -->
-<script>
-    function entrar() {
-        var formulario = new URLSearchParams(new FormData(entrar_pag_bonus));
-        fetch("/usuarios/autenticar", {
-            method: "POST",
-            body: formulario
-        }).then(resposta => {
-            
-            if (resposta.ok) {
-
-                resposta.json().then(json => {
-
-                    sessionStorage.login_usuario_meuapp = json.email;
-                    sessionStorage.nome_usuario_meuapp = json.prim_nome;
-                    
-                    window.location.href = 'piano_virtual.html';
-                });
-
-            } else {
-
-                console.log('Erro de login!');
-
-                response.text().then(texto => {
-                    console.error(texto);
-                    finalizar_aguardar(texto);
-                });
-            }
-        });
-
-        return false;
-    }
-</script>
+<script type="text/javascript" src="./js/login.js"></script>

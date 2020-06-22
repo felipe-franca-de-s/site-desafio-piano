@@ -19,9 +19,14 @@ function verificar_autenticacao() {
 }
 
 function logoff() {
-    finalizar_sessao();
-    sessionStorage.clear();
-    redirecionar_login();
+    let pergunta = confirm("Você tem certeza que deseja sair?");
+
+    if (pergunta == true) {
+        finalizar_sessao();
+        sessionStorage.clear();
+        redirecionar_login();
+        window.location.href = './index.html';
+    }
 }
 
 function validar_sessao() {

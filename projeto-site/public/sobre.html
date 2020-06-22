@@ -22,7 +22,7 @@
                 <ul>
                     <li>Olá, Seja Bem Vindo a Página Bonus!</li>
                     <li><span><a href="./piano_virtual.html">Piano Virtual.</a></span></li>
-                    <li><span id='btn_sair' onclick="sair()">Sair.</span></li>
+                    <li><span id='btn_sair' onclick="logoff()">Sair.</span></li>
                 </ul>
             </div>
         </div>
@@ -128,11 +128,7 @@
 </body>
 
 </html>
+<script src="./js/funcoes.js"></script>
 <script>
-    function sair() {
-        let pergunta = confirm("Você tem certeza que deseja sair?");
-        if (pergunta == true) {
-            window.location.href = './index.html';
-        }
-    }
+    verificar_autenticacao();
 </script>

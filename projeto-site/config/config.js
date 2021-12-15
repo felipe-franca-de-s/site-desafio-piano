@@ -8,8 +8,8 @@ module.exports = {
     storage: ":memory:"
   },
   production: {
-    username: 'usuario',
-    password: '12345678',
+    username: 'root',
+    password: 'admin',
     database: 'site',
     host: '127.0.0.1',
     dialect: 'mysql',

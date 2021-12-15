@@ -1,10 +1,9 @@
-create database usuario;
+create database site;
 
-create table cadastro(
-id_cadastro int primary key auto_increment,
+create table usuario(
+id_usuario int primary key auto_increment,
 nome varchar (15),
 sobrenome varchar (50),
-dt_Nasc date,
 email varchar (50),
 senha char (8)
 );
